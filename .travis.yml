@@ -2,6 +2,7 @@
 # This file should be at the root of your project
 language: ruby
 cache: bundler
+gemfile: Gemfile
 before_install:
   - gem install bundler
 script:
