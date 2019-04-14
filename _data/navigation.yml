@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Categories"
+  - title: "categories"
     url: https://emre.me/categories
-  - title: "Tags"
+  - title: "tags"
     url: https://emre.me/tags
