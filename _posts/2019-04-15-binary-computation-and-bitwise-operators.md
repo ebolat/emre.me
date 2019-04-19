@@ -2,7 +2,7 @@
 title: "Binary Computation and Bitwise Operators"
 header:
   image: https://cdn.emre.me/2019-04-15-binary-computation-and-bitwise-operators-header-image.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/h3sAF1cVURw)"
 categories:
   - computer-science
 tags:
@@ -23,7 +23,26 @@ Many numeral systems of ancient civilisations use ten and its powers for represe
 
 In the decimal system, each digit in a certain number represents the **1**’s, the **10**’s, the **100**’s, and so on, starting from the right hand side.
 
-![Decimal Number - 123](https://cdn.emre.me/decimal_123_emre.me.png){: .align-center}
+![Decimal Number - 123](https://cdn.emre.me/2019-04-15-binary-numbers-123.png){: .align-center}
 
+So, with the number “123”, for example, we have a 3 representing the **1**’s, a 2 representing the **10**’s, and finally a 1 to represent the **100**’s and total of them are 123.
+
+We are starting from 10 to the power of 0 and increasing the powers while moving to left 1, 2, 3 and so on.
+
+In the **binary system**, instead of using powers of 10, **we use powers of 2**.
+
+![Binary Number - 0111 1011](https://cdn.emre.me/2019-04-15-binary-numbers-01111011.png){: .align-center}
+
+In the binary system, each digit in a certain number represents the **1**’s, **2**’s, **4**’s, **8**’s, **16**’s, **32**’s, **64**’s, **128**’s, **256**’s and so on, starting from the right hand side.
+
+Even though we do need a few more digits than we did with the decimal system, the binary system is just as good as the decimal system for displaying numbers.
+Well, we are not limited to numbers, different types of information can also be represented in binary code, too! 
+
+To be able to represent **text in binary code**, we can use simple numbers to represent the different letters in the alphabet. So, “A” could be “1”, “B” could be “2”, and so on.
+
+Also, images and graphics displayed on your screen consists of pixels and each pixel in an image has **a numerical value** that determines the color it should display. This means that, we can represent images and graphics with binary code.
+
+### References ###
+1. Wikipedia, *[Origin of the Decimal Number System](https://en.wikipedia.org/wiki/Decimal#Origin)*
 [1]: https://en.wikipedia.org/wiki/Decimal#Origin
 
