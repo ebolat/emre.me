@@ -83,7 +83,6 @@ Working with primitive data types like *bytes*, *booleans*, *ints*, *floats*, *d
 
 This is especially important if you are working on data compression and encryption algorithms, optimization, data correction and error detection algorithms and so on.
 
-### Operators ###
 Lets start with basics. Followings are the bitwise operators that we can use in many programming languages.
 
 | Operator  | Desctiprion        |
@@ -107,18 +106,16 @@ Lets start with basics. Followings are the bitwise operators that we can use in 
 |1  |1  |1  |
 
 ```
+A = 1, B = 3, A&B = 1
+```
 
-A = 1, B = 3
-A & B = 1 & 3 = 1
+**Proof:**
 
-Proof:
-
+```
     0001   (A)
     0011   (B)
 & -------
     0001   (A&B) = 1
-
-
 ```
 
 ### OR Operator ###
@@ -132,6 +129,19 @@ Proof:
 |1  |0  |1   |
 |1  |1  |1   |
 
+```
+A = 1, B = 2, A|B = 3
+```
+
+**Proof:**
+
+```
+    0001   (A)
+    0010   (B)
+| -------
+    0011   (A|B) = 3
+```
+
 ### XOR Operator ###
 
 **XOR** Operator (`^`) gives **1** for *odd* numbers of **1**s, otherwise **0**.
@@ -143,16 +153,63 @@ Proof:
 |1  |0  |1  |
 |1  |1  |0  |
 
+```
+A = 2, B = 7, A^B = 5
+```
+
+**Proof:**
+
+```
+    0010   (A)
+    0111   (B)
+^ -------
+    0101   (A^B) = 5
+```
+
 ### One's Complement Operator ###
 **One's Complement** Operator (`~`) is an *unary* operator and converts **0**s to **1**s and **1**s to **0**s.
+
+```
+X = 2, ~X = -3
+```
+
+**Proof:**
+
+32-bit
+```
+ 2 = 0000 0000 0000 0000 0000 0000 0000 0010
+~2 = 1111 1111 1111 1111 1111 1111 1111 1101 = -3
+```
  
 ### Left Shift Operator ###
 **Left Shift** Operator (`<<`) shifts the bits to the left.
 
+```
+X = 4, X<<1 = 8
+```
+
+**Proof:**
+
+```
+X    = 0100
+X<<1 = 1000 ---> 8
+```
+
 ### Right Shift Operator ###
 **Right Shift** Operator (`>>`) shifts the bits to the right.
 
-### References ###
+```
+X = 4, X>>2 = 1
+```
+
+**Proof:**
+
+```
+X    = 0100
+X>>2 = 0001 ---> 1
+```
+
+## References ##
 
 1. Wikipedia, *[Origin of the Decimal Number System](https://en.wikipedia.org/wiki/Decimal#Origin)*
 2. Wikipedia, *[Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement)*
