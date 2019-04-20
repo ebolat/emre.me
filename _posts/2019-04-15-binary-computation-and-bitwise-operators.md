@@ -20,7 +20,7 @@ Binary code is the most fundamental concept underlying programming and [Computer
 ## How does the binary number system works? ##
 
 To be able to understand the [binary number system](https://en.wikipedia.org/wiki/Binary_number), we need to take a closer look to the [decimal number system](https://en.wikipedia.org/wiki/Decimal) which we learn in elementary school and still using everyday.
-Many numeral systems of ancient civilisations use ten and its powers for representing numbers, probably because there are ten fingers on two hands and people started counting by using their fingers.[<sup>1</sup>][1]
+Many numeral systems of ancient civilisations use ten and its powers for representing numbers, probably because there are ten fingers on two hands and people started counting by using their fingers.[<sup>1</sup>](#references)
 
 In the decimal system, each digit in a certain number represents the **1**’s, the **10**’s, the **100**’s, and so on, starting from the right hand side.
 
@@ -38,7 +38,7 @@ In the binary system, each digit in a certain number represents **1**’s, **2**
 
 ## What about negative numbers? ##
 
-Computers use a method called *Two's Complement* [<sup>2</sup>][2] to represent negative numbers. Also this method can be more effective when performing mathematical operations like adding and subtracting.
+Computers use a method called *Two's Complement* [<sup>2</sup>](#references) to represent negative numbers. Also this method can be more effective when performing mathematical operations like adding and subtracting.
 
 In this method, the **bit** at the far left side of the bit pattern is **the most significant bit** or **MSB** is used to indicate *positive* or *negative* numbers. 
 
@@ -48,13 +48,13 @@ Four-bit, positive, two's complement numbers would be 0000 = 0, 0001 = 1, up to 
 
 ![4-bit Positive Binary Numbers](https://cdn.emre.me/2019-04-15-four-bit-positive-binary-numbers.png){: .align-center}
 
-Negative numbers always start with a **1** and the remaining bits are used to store the actual size of the number. The smallest negative number is the largest binary value. (*e.g.* **1111** is **-1**)
+Negative numbers always start with a **1** and the remaining bits are used to store the actual size of the number. The biggest negative number is the largest binary value. (*e.g.* **1111** is **-1**)
 
 ![4-bit Negative Binary Numbers](https://cdn.emre.me/2019-04-15-four-bit-negative-binary-numbers.png){: .align-center}
 
 ## Steps to convert a positive binary number to its negative value ##
 
-Following steps will convert a positive binery number to its negative value by using *Two's Complement for negative numbers* method.
+Following these steps will convert a positive binary number to its negative value by using *Two's Complement for negative numbers* method.
 
 
 
@@ -69,7 +69,7 @@ Following steps will convert a positive binery number to its negative value by u
 
 Even though we do need a few more digits than we did with the decimal system, the binary system is just as good as the decimal system for displaying numbers.
 
-Well, we are not limited to numbers, different types of information can also be represented in binary code, too! 
+Well, in fact, we are not limited to numbers, different types of information can also be represented in binary code, too! 
 
 To be able to represent **text in binary code**, we can use simple numbers to represent the different letters in the alphabet. So, *A* could be **1**, *B* could be **2**, and so on.
 
@@ -80,9 +80,6 @@ Also, *images* and *graphics* displayed on your screen consists of pixels and ea
 
 
 ### References ###
-[1]: https://en.wikipedia.org/wiki/Decimal#Origin
-
-[2]: https://en.wikipedia.org/wiki/Two%27s_complement
 
 1. Wikipedia, *[Origin of the Decimal Number System](https://en.wikipedia.org/wiki/Decimal#Origin)*
 2. Wikipedia, *[Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement)*
