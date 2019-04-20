@@ -81,13 +81,15 @@ Also, *images* and *graphics* displayed on your screen consists of pixels and ea
 
 Working with primitive data types like *bytes*, *booleans*, *ints*, *floats*, *doubles* or with *data structures* is normal for a programmer. Sometimes in Computer Science, you need to go beyond this to a more deeper level where you need to understand the importance of **bits**.
 
+This is especially important if you are working on data compression and encryption algorithms, optimization, data correction and error detection algorithms and so on.
+
 ### Operators ###
 Lets start with basics. Followings are the bitwise operators that we can use in many programming languages.
 
 | Operator  | Desctiprion        |
 | --------- | ------------------ |
 | &         | AND                |
-|`|`        | OR                 |
+| \|        | OR                 |
 | ^         | XOR (Exclusive OR) |
 | ~         | One's Complement   |
 | <<        | Left Shift         |
@@ -95,8 +97,60 @@ Lets start with basics. Followings are the bitwise operators that we can use in 
 
 ### AND Operator ###
 
+**AND** Operator (`&`) gives **1** only if both of the operands are **1**, otherwise **0**.
+
+|A  |B  |A&B|
+|---|---|---|
+|0  |0  |0  |
+|0  |1  |0  |
+|1  |0  |0  |
+|1  |1  |1  |
+
+```
+
+A = 1, B = 3
+A & B = 1 & 3 = 1
+
+Proof:
+
+    0001   (A)
+    0011   (B)
+& -------
+    0001   (A&B) = 1
 
 
+```
+
+### OR Operator ###
+
+**OR** Operator (`|`) gives **0** only if both of the operands are **0**, otherwise **1**.
+
+|A  |B  |A\|B|
+|---|---|----|
+|0  |0  |0   |
+|0  |1  |1   |
+|1  |0  |1   |
+|1  |1  |1   |
+
+### XOR Operator ###
+
+**XOR** Operator (`^`) gives **1** for *odd* numbers of **1**s, otherwise **0**.
+
+|A  |B  |A^B|
+|---|---|---|
+|0  |0  |0  |
+|0  |1  |1  |
+|1  |0  |1  |
+|1  |1  |0  |
+
+### One's Complement Operator ###
+**One's Complement** Operator (`~`) is an *unary* operator and converts **0**s to **1**s and **1**s to **0**s.
+ 
+### Left Shift Operator ###
+**Left Shift** Operator (`<<`) shifts the bits to the left.
+
+### Right Shift Operator ###
+**Right Shift** Operator (`>>`) shifts the bits to the right.
 
 ### References ###
 
