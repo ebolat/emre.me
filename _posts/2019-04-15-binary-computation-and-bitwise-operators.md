@@ -9,6 +9,8 @@ tags:
   - basics
   - binary-numbers
   - bitwise-operators
+toc: true
+toc_sticky: true
 ---
 
 If binary code is something only computers can understand, why should you learn about it?
@@ -76,6 +78,23 @@ To be able to represent **text in binary code**, we can use simple numbers to re
 Also, *images* and *graphics* displayed on your screen consists of pixels and each pixel in an image has **a numerical value** that determines the color it should display. This means that, we can represent images and graphics with binary code.
 
 ## Bitwise Operators ##
+
+Working with primitive data types like *bytes*, *booleans*, *ints*, *floats*, *doubles* or with *data structures* is normal for a programmer. Sometimes in Computer Science, you need to go beyond this to a more deeper level where you need to understand the importance of **bits**.
+
+### Operators ###
+Lets start with basics. Followings are the bitwise operators that we can use in many programming languages.
+
+| Operator  | Desctiprion        |
+| --------- | ------------------ |
+| &         | AND                |
+|`|`        | OR                 |
+| ^         | XOR (Exclusive OR) |
+| ~         | One's Complement   |
+| <<        | Left Shift         |
+| >>        | Right Shift        |
+
+### AND Operator ###
+
 
 
 
