@@ -97,7 +97,7 @@ def set_nth_bit(num, n: int) -> str:
         return f"{n}th bit is set ({bin(num)} is changed to {bin(set_nth_bit_result)})"
 ```
 
-If the result of `num | (1 << n)` operation sets the targeted bit.
+Result of `num | (1 << n)` operation sets the targeted bit. Because using OR (`|`) operator on any value with **0** leaves the value the same but if we use OR (`|`) operator with **1**, it changes the value to **1**.
 
 Suppose we have 113 and trying the 2<sup>nd</sup> bit.
 
@@ -143,5 +143,101 @@ Supporse that we want to unset 4<sup>th</sup> bit of 83;
 & -----------
    0100 0011  --> 4th bit is unset
 ```
+
+## Toggle the *n-th* bit ##
+
+So, we want to toggle the value of the n<sup>th</sup> bit to **1** if it is **0** and to **0** if it is **1**.
+
+```python
+def toggle_nth_bit(num, n: int) -> str:
+    toggled_number = num ^ (1 << n)
+    return f"{n}th bit of {bin(num)} toggled and the result is {bin(toggled_number)}"
+```
+
+XOR (`^`) operator in `num ^ (1 << n)` toggles the value from **0** to **1** or vice versa.
+
+As an example, let's try to toggle 4<sup>th</sup> bit of 111;
+
+```
+   0110 1111   (binary of 111)
+   0001 0000   (1 << 4)
+^ -----------
+   0111 1111  --> 4th bit toggled
+```
+
+## Turn off the *rightmost 1-bit* ##
+
+We are going to turn off the rightmost 1-bit. For example, 1001 1**1**00 (rightmost 1-bit is the bold one) will turn into 1001 1000.
+
+```python
+def turn_off_rightmost_1bit(num: int) -> str:
+    rightmost_1bit_turned_off = num & (num - 1)
+    return f"Rightmost 1-bit in {bin(num)} is turned off and the result: {bin(rightmost_1bit_turned_off)}"
+```
+`num & (num - 1)` does the trick but how?
+
+For example;
+
+```
+   1001 1100   (num)
+   1001 1011   (num - 1)
+& -----------
+   1001 1000  --> rightmost 1-bit is turned off
+```
+
+```
+   1111 1111   (num)
+   1111 1110   (num - 1)
+& -----------
+   1111 1110  --> rightmost 1-bit is turned off
+```
+
+```
+   0100 0000   (num)
+   0011 1111   (num - 1)
+& -----------
+   0000 0000  --> rightmost 1-bit is turned off    
+```
+
+
+Substracting **1** from the original number sets all the lower bits to **1** and applying AND (`&`) operation sets all of them to **0** including the rightmost 1-bit.
+
+## Isolate the *rightmost 1-bit* ##
+
+We want to find rightmost 1-bit and set all other bits to **0**. For example, 1001 1**1**00 (rightmost 1-bit is the bold one) will turn into 0000 0100.
+
+```python
+def isolate_rightmost_1bit(num: int) -> str:
+    isolated_number = num & (-num)
+    return f"Rightmost 1-bit in {bin(num)} is isolated and the result: {bin(isolated_number)}"
+``` 
+
+`num & (-num)` does the isolation. We are going to use [Two's Complement for negative numbers](https://emre.me/computer-science/binary-computation-and-bitwise-operators/#steps-to-convert-a-positive-binary-number-to-its-negative-value) method to be able to calculate `-num`.
+
+```
+   1011 1100   (num)
+   0100 0100   (-num)
+& -----------
+   0000 0100  --> isolated rightmost 1-bit
+```
+
+In Two's Complement, `-num = ~num + 1` so adding `+1` because of Two's Complement rules makes the trick here.
+
+## Isolate the *rightmost 0-bit* ##
+
+```python
+def isolate_rightmost_0bit(num: int) -> str:
+    isolated_number = ~num & (num + 1)
+    return f"Rightmost 0-bit in {bin(num)} is isolated and the result: {bin(isolated_number)}"
+```
+
+## Turn on the *rightmost 0-bit* ##
+
+```python
+def turn_on_rightmost_0bit(num: int) -> str:
+    rightmost_0bit_turned_on = num | (num + 1)
+    return f"Rightmost 0-bit in {bin(num)} is turned on and the result: {bin(rightmost_0bit_turned_on)}"
+```
+
 
 
