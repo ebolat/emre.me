@@ -62,6 +62,19 @@ def turn_on_rightmost_0bit(num: int) -> str:
     return f"Rightmost 0-bit in {bin(num)} is turned on and the result: {bin(rightmost_0bit_turned_on)}"
 
 
+# Total number of 1-bits in given number is EVEN or ODD?
+def check_parity(num: int) -> str:
+    parity_counter = 0
+    while num:
+        num = num & (num - 1)
+        parity_counter += 1
+
+    if parity_counter & 1 == 0:
+        return f"Parity is {parity_counter} and it is EVEN"
+    else:
+        return f"Parity is {parity_counter} and it is ODD"
+
+
 print(even_or_odd_checker(1547548))
 print(check_nth_bit(175, 5))
 print(set_nth_bit(113, 2))
@@ -71,3 +84,4 @@ print(turn_off_rightmost_1bit(116))
 print(isolate_rightmost_1bit(116))
 print(isolate_rightmost_0bit(119))
 print(turn_on_rightmost_0bit(115))
+print(check_parity(20))
