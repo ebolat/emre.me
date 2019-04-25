@@ -230,6 +230,16 @@ def isolate_rightmost_0bit(num: int) -> str:
     isolated_number = ~num & (num + 1)
     return f"Rightmost 0-bit in {bin(num)} is isolated and the result: {bin(isolated_number)}"
 ```
+`~num & (num + 1)` does the isolation. It finds the rightmost zero, turns other bits to **0** and sets isolated bit to **1**.
+
+If 1011 110**0** is the number, bold 0 will be isolated;
+```
+   0100 0011   (~num)
+   1011 1101   (num + 1)
+& -----------
+   0000 0001  --> rightmost 0 (zero) is isolated
+```
+
 
 ## Turn on the *rightmost 0-bit* ##
 
@@ -238,6 +248,18 @@ def turn_on_rightmost_0bit(num: int) -> str:
     rightmost_0bit_turned_on = num | (num + 1)
     return f"Rightmost 0-bit in {bin(num)} is turned on and the result: {bin(rightmost_0bit_turned_on)}"
 ```
+`num | (num + 1)` trick turns on the rightmost 0-bit. For example it turns 1010 1**0**11 to 1010 1**1**11
 
+```
+   1010 1011   (num)
+   1010 1100   (num + 1)
+| -----------
+   1010 1111  --> rightmost 0 (zero) turned on 
+```
 
+## References ##
 
+If you like these tricks, you can check [Peter's Blog](https://catonmat.net) for more.
+Also, [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) by Sean Eron Anderson has a very good collection of these tricks.
+
+There is even a book entirely about these tricks called [Hacker's Delight](https://www.amazon.com/Hackers-Delight-Edition-Henry-Warren/dp/0321842685) by Henry S. Warren.
