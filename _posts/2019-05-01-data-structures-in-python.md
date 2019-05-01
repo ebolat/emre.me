@@ -11,7 +11,7 @@ tags:
   - data-structures
 ---
 
-Data structures -as their name suggests- are *structures* which can hold some *data* together. They are one of the most important fundamental concepts in [Computer Scince](https://emre.me/categories/#computer-science).
+Data structures -as their name suggests- are *structures* which can hold some *data* together. They are one of the most important fundamental concepts in [Computer Science](https://emre.me/categories/#computer-science).
 There are four *built-in* data structures in Python.
 
 - [Lists](https://emre.me/data-structures/lists/)
@@ -19,7 +19,7 @@ There are four *built-in* data structures in Python.
 - Sets
 - Dictionaries
 
-I will introduce all of these built-in data structures in separate posts which can be reached by clicking the links above. Also I will mention about frequently used data structures like,
+I will introduce all of these built-in data structures in separate posts which can be reached by clicking the links above. Also, I will mention about frequently used data structures like,
 
 - Arrays, NumPy Arrays, 2D Arrays and Matrices
 - Linked Lists
