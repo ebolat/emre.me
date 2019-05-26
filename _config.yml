@@ -83,7 +83,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "ebolat"
+  username               : "emrecode"
 facebook:
   username               :
   app_id                 :
@@ -117,7 +117,7 @@ author:
       url: "https://emre.me"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/ebolat"
+      url: "https://twitter.com/emrecode"
     - label: "StackOverflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/users/6382007/emre-bolat"
