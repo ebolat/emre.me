@@ -18,13 +18,13 @@ Linked Lists are among the most common data structures used in [computer science
 
 In arrays, the data is stored at contiguous memory locations but linked lists are different, they do not store data at contiguous memory locations. For each linked list node, it stores the value of the item and the reference (pointer) to the next item.
 
-## Singly Linked List ##
+## Singly Linked Lists ##
 
 ![Singly Linked List](https://cdn.emre.me/2019-06-13-linked-list-singly.png){: .align-center}
 
 Linked lists are dynamic data structures which means memory allocation is dynamic, reserved memory for linked list can increase or decrease at runtime and no memory is allocated in advance. Whenever a new memory space is needed for adding a new node to a linked list, the memory needed for the new node is created at runtime.
 
-This dynamic memory allocation structure is also make easy updates possible. Removing and inserting nodes are fast operations in linked lists.
+This dynamic memory allocation structure is also make easy updates possible. *Removing* and *inserting* nodes are **fast** operations in linked lists.
 
 However, this kind of flexibility comes together with some trade-offs. Since each linked list node has to store the reference to the next node, some extra memory is required. Also, unlike arrays, where you can directly access an item with its index number, you cannot access a linked list item directly since only information you have is the first item in the linked list and references following to this first item. That is why, worst-case access time is **O(n)**.
 
@@ -36,7 +36,7 @@ However, this kind of flexibility comes together with some trade-offs. Since eac
 
 Also, basic operations like insertion or deletion are easier to implement in doubly linked lists because extra traverse operations to the previous node to store its value is unnecessary since referance to previous node is already stored in the node itself. Only drawbacks we can list are you need more memory space to store previous node reference for each node and these adds a few more steps to implementation.
 
-## Creating a Node ##
+### Creating a Node ###
 
 First of all, we need to define a **Node** class. I want to implement a Singly Linked List therefore, our node class will consists of two variables **val** for storing the *value* and **next** for storing the *reference to the next node*.
 
@@ -52,7 +52,7 @@ class Node:
 
 Value (`val`) of the item will be set to the value passed by the constructor and the initial value of the `next` node reference will be `None` initially.
 
-## Creating an Empty Singly Linked List ##
+### Creating an Empty Singly Linked List ###
 
 Lets create a singly linked list together. To be able to have a flexible implementation, I want to have `head`, `tail` and `size` attributes in my singly linked list.
 
@@ -68,7 +68,7 @@ class LinkedList:
 
 Our empty linked list is ready. To initialize it, we need to call it like: `LinkedList()`.
 
-## Insert a New Node at the Beginning ##
+### Insert a New Node at the Beginning ###
 
 We will add a `prepend()` method to our existing singly linked list implementation which takes `data` as a parameter and adds a new node at the beginning of the linked list with this `data`.
 
@@ -90,7 +90,7 @@ If our linked list is empty, `self.head` will be `None` and in this case, we are
 
 If there are already some nodes in the linked list and we are just adding one more at the beginning of it, then we need to create a new node. `next` attribute of this new node should refer to current `self.head`. Also new `self.head` will be this new node and old head became the second node in the linked list.
 
-## Insert a New Node at the End ##
+### Insert a New Node at the End ###
 
 We need to implement an `append()` method to our existing singly linked list implementation which takes `data` as a parameter and adds a new node at the end of the linked list with this new `data`.
 
@@ -112,7 +112,7 @@ If our linked list is empty, `self.head` will be `None` and in this case, we are
 
 If there are already some nodes in the linked list and we are just adding one more at the end of it, then we need to create a new node and set this new node as `tail`.
 
-## Accessing a Node ##
+### Accessing a Node ###
 
 To be able to access a specific node, you need to implement a `get()` method which will get `index` parameter.
 
@@ -134,7 +134,7 @@ def get(self, index):
 
 You have to visit each node one-by-one until you reach the target `index` value. This visiting process makes our time complexity **O(n)**.
 
-## Insert a New Node at the Index ##
+### Insert a New Node at the Index ###
 
 If we want to add our newly created node to an index, we need to create a new method `add_at_index()` which takes `index` and `data` parameters.
 
@@ -160,7 +160,7 @@ def add_at_index(self, index, data):
 
 To be able to insert a new node to an index, first you need to go to target place by visiting each node one-by-one. Then, updating `next` parameter of previous node and newly created node will be necessary.
 
-## Delete a Node at the Index ##
+### Delete a Node at the Index ###
 Just like [Insert a New Node at the Index](#insert-a-new-node-at-the-index), to be able to delete *index-th* node, first you need to visit each node one-by-one until you reach the target node.
 
 ```python
