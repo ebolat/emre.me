@@ -22,7 +22,7 @@ There are four *built-in* data structures in Python.
 I will introduce all of these built-in data structures in separate posts which can be reached by clicking the links above. Also, I will mention about frequently used data structures like,
 
 - Arrays, NumPy Arrays, 2D Arrays and Matrices
-- Linked Lists
+- [Linked Lists](https://emre.me/data-structures/linked-lists/)
 - Stacks
 - Queues
 - Binary Trees
