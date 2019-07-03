@@ -6,7 +6,6 @@ header:
 categories:
   - computer-science
 tags:
-  - basics
   - binary-numbers
   - bitwise-operators
 toc: true
