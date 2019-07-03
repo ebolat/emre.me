@@ -36,6 +36,7 @@ However, this kind of flexibility comes together with some trade-offs. Since eac
 
 Also, basic operations like insertion or deletion are easier to implement in doubly linked lists because extra traverse operations to the previous node to store its value is unnecessary since referance to previous node is already stored in the node itself. Only drawbacks we can list are you need more memory space to store previous node reference for each node and these adds a few more steps to implementation.
 
+## Implementation of a Singly Linked List ##
 ### Creating a Node ###
 
 First of all, we need to define a **Node** class. I want to implement a Singly Linked List therefore, our node class will consists of two variables **val** for storing the *value* and **next** for storing the *reference to the next node*.
