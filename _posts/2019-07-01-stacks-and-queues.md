@@ -24,7 +24,7 @@ Stacks and Queues are two fundamental data structures often used in [Computer Sc
 ![Cargo Containers](https://cdn.emre.me/2019-07-01-cargo-containers.jpg)
 
 <figure>
-  <figcaption>Photo from [Unsplash](https://unsplash.com/photos/w2pBTamLhhg).</figcaption>
+  <figcaption>Photo from <a href="https://unsplash.com/photos/w2pBTamLhhg" target="_blank">Unsplash</a></figcaption>
 </figure>
 
 > Let's imagine a stack of cargo containers where new containers are added to the top of the stack. Since they are very heavy, only the topmost cargo container can be moved (**LIFO**). The topmost containers must be removed one by one, to be able to reach the other cargo containers down in the stack.
