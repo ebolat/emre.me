@@ -12,6 +12,7 @@
 
 - [Data Structures in Python](https://emre.me/data-structures/data-structures-in-python/) - 01.05.2019
 - [Lists](https://emre.me/data-structures/lists/) - 01.05.2019
+- [Linked Lists](https://emre.me/data-structures/linked-lists/) - 13.06.2019
 
 
 ### Basic Types ###
