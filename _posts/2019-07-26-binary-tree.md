@@ -55,7 +55,7 @@ def insert_left(self, value):
         self.left = new_node
 ```
 
-When there is no left child, all we need to do is simply create a left child with creating a new node. In the second case, wehre there is already an existing left child, we are inserting as new node and pushing existing child node one level down in the tree.
+When there is no left child, all we need to do is simply create a left child with creating a new node. In the second case, where there is already an existing left child, we are inserting as new node and pushing existing child node one level down in the tree.
 
 ### insert_right function ###
 
@@ -155,7 +155,7 @@ print(f_node.value) # f
 
 ## Summary ##
 
-Binary Tree is a fundamental data structure in computer science and his article is just a scratching the surface. I will continue writing more about Trees when I am writing new articles about searching (Depth-First Search - DFS, Breadth-First Search - BFS), Binary Search Trees (BST), balanced trees, AVL trees, tree treversal etc.
+Binary Tree is a fundamental data structure in computer science and this article is just scratching the surface. I will continue writing more about trees in new articles about searching (Depth-First Search - DFS, Breadth-First Search - BFS), Binary Search Trees (BST), balanced trees, AVL trees, tree treversal etc.
 
 ## References ##
 
