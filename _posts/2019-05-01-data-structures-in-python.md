@@ -23,10 +23,10 @@ I will introduce all of these built-in data structures in separate posts which c
 
 - Arrays, NumPy Arrays, 2D Arrays and Matrices
 - [Linked Lists](https://emre.me/data-structures/linked-lists/)
-- Stacks
-- Queues
-- Binary Trees
-- Heaps
+- [Stacks](https://emre.me/data-structures/stacks-and-queues/)
+- [Queues](https://emre.me/data-structures/stacks-and-queues/)
+- [Binary Trees](https://emre.me/data-structures/binary-tree/)
+- [Heaps](https://emre.me/data-structures/heaps/)
 - Hash Tables
 - Graphs
 

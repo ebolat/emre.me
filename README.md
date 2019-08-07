@@ -14,6 +14,7 @@
 - [Lists](https://emre.me/data-structures/lists/) - 01.05.2019
 - [Linked Lists](https://emre.me/data-structures/linked-lists/) - 13.06.2019
 - [Binary Tree](https://emre.me/data-structures/binary-tree/) - 26.07.2019
+- [Heaps](https://emre.me/data-structures/heaps/) - 01.08.2019
 
 
 ### Basic Types ###
