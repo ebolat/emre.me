@@ -51,6 +51,7 @@ In short we can say that, performance of *Linear Search* is **O(1)** for the *be
 ## Binary Search ##
 
 *Linear search* works well if our list is **not in order** but it can be slow if there are so many number of items in our list. What if we are sure that our list is already in order?
+
 *Binary search* exploits the ordering of the list. The idea behind is, each time we made a comparison, we should eliminate the half of the list until we either find the search term or determine that the term is not in the list. We do this by looking at the middle item in the list, and determining if our search term is higher or lower than this middle item. 
 
 ![Binary Search](https://cdn.emre.me/2019-08-08-binary-search.png){: .align-center}
@@ -73,7 +74,9 @@ def binary_search(arr, key):
 ```
 
 *start* variable is set to **0** and *end* variable is set to the length of the list. A *while loop* iterates as long as *start* variable is less than the *end* variable. *mid* variable is calculated as the *floor* of the average of *start* and *end*.
+
 If the element at index *mid* is less than search *key*, it means that our *search key* is in the **2<sup>nd</sup>** part of the list so, *start* is set to **mid + 1** and if it is more than *key*, it means that our *search key* is in the **1<sup>st</sup>** part of the list so, *end* is set to *mid*. 
+
 Otherwise, *mid* is returned as the index of the found element. If no such item is found, **-1** is returned.
 
 ### Binary Search Implementation with Recursion ###
@@ -93,8 +96,12 @@ def recursive_binary_search(arr, start, end, key):
 ```
 
 Our *base case* is testing whether *start* is less than *end*. If not, **-1** is returned.
+
 *mid* variable is calculated as the floor of the average of *start* and *end*.
-If the element at index *mid* is less than *search key*, `recursive_binary_search()` is called again with `start = mid + 1` and if it is more than *search key*, it is called with `end = mid`. Otherwise, *mid* is returned as the index of the found element. 
+
+If the element at index *mid* is less than *search key*, `recursive_binary_search()` is called again with `start = mid + 1` and if it is more than *search key*, it is called with `end = mid`. 
+
+Otherwise, *mid* is returned as the index of the found element. 
 
 ### Performance ###
 - Best case: occurs when search term found in the first try. In this case, the search term would be the middle item in the list
