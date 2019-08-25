@@ -17,7 +17,7 @@ There are four *built-in* data structures in Python.
 - [Lists](https://emre.me/data-structures/lists/)
 - Tuples
 - Sets
-- Dictionaries
+- [Dictionaries](https://emre.me/data-structures/hash-tables/)
 
 I will introduce all of these built-in data structures in separate posts which can be reached by clicking the links above. Also, I will mention about frequently used data structures like,
 
@@ -27,7 +27,7 @@ I will introduce all of these built-in data structures in separate posts which c
 - [Queues](https://emre.me/data-structures/stacks-and-queues/)
 - [Binary Trees](https://emre.me/data-structures/binary-tree/)
 - [Heaps](https://emre.me/data-structures/heaps/)
-- Hash Tables
+- [Hash Tables](https://emre.me/data-structures/hash-tables/)
 - Graphs
 
 Let's take a tour of these data structures together. 
