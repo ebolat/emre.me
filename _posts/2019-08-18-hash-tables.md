@@ -18,6 +18,7 @@ toc_sticky: true
 A *hash table* is an **unordered** collection of key-value pairs, where each key is *unique*. Also, they are the most commonly used data structure for implementing associative arrays[<sup>1</sup>](#references) (maps, dictionaries).
 
 > “If I were stranded on a desert island and could only take one data structure with me, it would be the hash table.”
+> 
 > Peter Van Der Linden, from the book "*Expert C Programming: Deep C Secrets*"
 
 They are so useful that, in most of the programming languages, there is a built-in *hash table* implementation of the standard library. It has different names in different programming languages. In some languages, it is called a *dictionary*, in some others it is called *map* or *hash*.
@@ -35,7 +36,7 @@ They are so useful that, in most of the programming languages, there is a built-
 ## Hash Function ##
 The mapping between an *item* and the *slot* where that item belongs in the hash table is called the **hash function**. The hash function will take any item in the collection and return an integer in the range of slot names, between **`0`** and **`length-1`**.
 
-When you are writing a hash function your main goal is that all the hashes would be distributed uniformly. To ensure this uniform distribution, our first strategy will be **remainder method**, which simply takes an item and divides it by the table size, returning the remainder as its *hash value*.
+When you are writing a hash function your main goal is that all the hashes would be distributed *uniformly*. To ensure this uniform distribution, our first strategy will be **remainder method**, which simply takes an item and divides it by the table size, returning the remainder as its *hash value*.
 
 Assume that we have a hash table with the size **13**, and the set of integer items **99**, **17**, **54**, **26**, **75**, **31**, and **50**.
 
@@ -51,11 +52,13 @@ If we apply *remainder method* to **99**, with the formula: `hash = item % len(h
 | 31 | 5 | 
 | 50 | 11 |
 
+Visualization of the table would be;
+
 ![Hash Table](https://cdn.emre.me/2019-08-18-hash-tables.png){: .align-center}
 
-**Load Factor** represents the load on our *hash table*. It is a good way to understand how full our hash table is. If there are n entries, than `load_factor = n / sizeoftable`. In our case, it is **7 / 13**.
+**Load Factor** represents the load on our *hash table*. It is a good way to understand how much *full* our hash table is. If there are **n** entries, than `load_factor = n / sizeoftable`. In our case, it is **7 / 13**.
 
-As you can see, all items are uniformly distributed. But using *remainder method* does not guarantee avoiding potential collisions. For example, if there were an item, **69** in the list, the remainder is **4** and this means that there would be a **collision** between item **17** and item **69**.
+As you can see, all items are *uniformly distributed*. But using *remainder method* does not guarantee avoiding potential collisions. For example, if there was an item, **69** in the list, the remainder is **4** and this means that there would be a **collision** between item **17** and item **69**.
 
 ### Choosing a Good Hash Function ###
 
@@ -90,7 +93,7 @@ One method for *resolving* collisions looks into the *hash table* and tries to f
 
 Note that we may need to go back to the first slot (*circularly*) to cover the entire hash table. This collision resolution process is referred to as **open addressing** in that it tries to find the *next* open slot or *address* in the *hash table*. By *systematically* visiting each slot one at a time, we are performing an open addressing technique called **linear probing**.
 
-For example with the *remainder method* we said that, if there were an item, **69** in the list, the remainder is **4** and this means that there would be a **collision** between item **17** and item **69** at position **4**. To solve this collision with **linear probing** method, we are going to try the next slot, **5** which is also occupied. So, we are going to try one more, and will find an *empty* slot at position **6**.
+For example with the *remainder method* we said that, if there was an item, **69** in the list, the remainder is **4** and this means that there would be a **collision** between item **17** and item **69** at position **4**. To solve this collision with **linear probing** method, we are going to try the next slot, **5** which is also occupied. So, we are going to try one more, and will find an *empty* slot at position **6**.
 
 ![Linear Probing](https://cdn.emre.me/2019-08-18-linear-probing.png){: .align-center}
 
