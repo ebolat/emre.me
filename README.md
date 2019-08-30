@@ -13,9 +13,15 @@
 - [Data Structures in Python](https://emre.me/data-structures/data-structures-in-python/) - 01.05.2019
 - [Lists](https://emre.me/data-structures/lists/) - 01.05.2019
 - [Linked Lists](https://emre.me/data-structures/linked-lists/) - 13.06.2019
+- [Stacks and Queues](https://emre.me/data-structures/stacks-and-queues/) - 01.07.2019
 - [Binary Tree](https://emre.me/data-structures/binary-tree/) - 26.07.2019
 - [Heaps](https://emre.me/data-structures/heaps/) - 01.08.2019
+- [Hash Tables](https://emre.me/data-structures/hash-tables/) - 18.08.2019
+- [Binary Search Trees](https://emre.me/data-structures/binary-search-trees/) - 27.08.2019
 
+### Algorithms ###
+
+- [Search Algorithms](https://emre.me/algorithms/search-algorithms/) - 08.08.2019
 
 ### Basic Types ###
 
