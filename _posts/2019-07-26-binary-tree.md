@@ -18,7 +18,7 @@ Binary Tree is a classical data structure in [Computer Science](https://en.wikip
 
 The left binary tree is sometimes referred to as *the left subtree* of the root and the right binary tree is referred to as *the right subtree* of the root.
 
-Binary trees most commonly occur in the context of Binary Search Trees (BST), where keys are stored in a sorted fashion but in this article we will only focus on Binary Trees. Binary Search Trees (BST) will be explained deeply in another article.
+Binary trees most commonly occur in the context of [Binary Search Trees (BST)](https://emre.me/data-structures/binary-search-trees/), where keys are stored in a sorted fashion but in this article we will only focus on Binary Trees. [Binary Search Trees (BST)](https://emre.me/data-structures/binary-search-trees/) will be explained deeply in another article.
 
 ![Binary Tree](https://cdn.emre.me/2019-07-26-binary-tree.png){: .align-center}
 
@@ -171,7 +171,7 @@ def post_order(self):
     print(self.root)
 ```
 
-### Example ###
+## Example ##
 
 To test our code, we can try to implement the example tree in the traversals.
 
