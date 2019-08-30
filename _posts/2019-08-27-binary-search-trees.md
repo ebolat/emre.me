@@ -15,9 +15,9 @@ toc_sticky: true
 
 The **Binary Search Tree (BST)** is a [Binary Tree](https://emre.me/data-structures/binary-tree/) with the following properties.
 
-> 1. Keys that are **less than** the *parent* are found in the **left subtree**
-> 2. Keys that are **greater than** the *parent* are found in the **right subtree**
-> 3. Both the **left** and **right** subtrees must also be *binary search trees*.
+1. Keys that are **less than** the *parent* are found in the **left subtree**
+2. Keys that are **greater than** the *parent* are found in the **right subtree**
+3. Both the **left** and **right** subtrees must also be *binary search trees*.
 
 ![Binary Search Tree](https://cdn.emre.me/2019-08-27-binary-search-tree.png){: .align-center}
 
@@ -37,15 +37,15 @@ The **Binary Search Tree (BST)** is a [Binary Tree](https://emre.me/data-structu
 | Predecessor | O(log n) | O(n) |
 | Successor | O(log n) | O(n) |
 
-When we are talking about the *average case*, it is the time it takes for the operation on a **balanced tree**, and we are talking about the *worst case*, it is the time it takes for the given operation on a **non-balanced tree**.
+When we are talking about the *average case*, it is the time it takes for the operation on a **balanced tree**, and when we are talking about the *worst case*, it is the time it takes for the given operation on a **non-balanced tree**.
 
 ![Balanced and Non-Balanced Trees](https://cdn.emre.me/2019-08-27-balanced-nonbalanced-tree.png){: .align-center}
 
 ## Implementation ##
 
-We should start the implementation by defining `BinarySearchTree` and `Node` classes in our code.
+We should start the implementation by defining `BinarySearchTree()` and `Node()` classes in our code.
 
-An empty `BinarySearchTree` class will look like this;
+An empty `BinarySearchTree()` class will look like this;
 
 ```python
 class BinarySearchTree:
@@ -95,56 +95,6 @@ class Node:
 
     def has_both_children(self):
         return self.rightChild and self.leftChild
-
-    def splice_out(self):
-        if self.is_leaf():
-            if self.is_left_child():
-                self.parent.leftChild = None
-            else:
-                self.parent.rightChild = None
-        elif self.has_any_children():
-            if self.has_left_child():
-                if self.is_left_child():
-                    self.parent.leftChild = self.leftChild
-                else:
-                    self.parent.rightChild = self.leftChild
-                self.leftChild.parent = self.parent
-            else:
-                if self.is_left_child():
-                    self.parent.leftChild = self.rightChild
-                else:
-                    self.parent.rightChild = self.rightChild
-                self.rightChild.parent = self.parent
-
-    def find_successor(self):
-        successor = None
-        if self.has_right_child():
-            successor = self.rightChild.find_min()
-        else:
-            if self.parent:
-                if self.is_left_child():
-                    successor = self.parent
-                else:
-                    self.parent.rightChild = None
-                    successor = self.parent.find_successor()
-                    self.parent.rightChild = self
-        return successor
-
-    def find_min(self):
-        current = self
-        while current.has_left_child():
-            current = current.leftChild
-        return current
-
-    def replace_node_data(self, key, value, lc, rc):
-        self.key = key
-        self.payload = value
-        self.leftChild = lc
-        self.rightChild = rc
-        if self.has_left_child():
-            self.leftChild.parent = self
-        if self.has_right_child():
-            self.rightChild.parent = self
 ```
 
 ### Insert Operation ###
@@ -250,7 +200,7 @@ Handling the first case is pretty easy:
 ![Deleting a Node Without Children](https://cdn.emre.me/2019-08-27-deleting-node-without-children.png){: .align-center}
 
 <figure>
-  <figcaption>Deleting Node **65**, a node **without** children</figcaption>
+  <figcaption>Deleting Node <b>65</b>, a node <b>without</b> children</figcaption>
 </figure>
 
 ```python
@@ -267,7 +217,7 @@ If a node has only a **single** child, then we can simply *promote* the child to
 ![Deleting a Node With Single Children](https://cdn.emre.me/2019-08-27-deleting-node-with-single-child.png){: .align-center}
 
 <figure>
-  <figcaption>Deleting Node **89**, a node with **single** children</figcaption>
+  <figcaption>Deleting Node <b>89</b>, a node with <b>single</b> children</figcaption>
 </figure>
 
 The decision proceeds as follows:
@@ -313,7 +263,7 @@ The **successor** is *guaranteed* to have *no more than one child*, so we know h
 ![Deleting a Node With Two Children](https://cdn.emre.me/2019-08-27-deleting-node-with-two-children.png){: .align-center}
 
 <figure>
-  <figcaption>Deleting Node **18**, a node with **two** children</figcaption>
+  <figcaption>Deleting Node <b>18</b>, a node with <b>two</b> children</figcaption>
 </figure>
 
 ```python
@@ -332,6 +282,26 @@ There are three cases to consider when looking for the successor:
 
 
 ```python
+def splice_out(self):
+    if self.is_leaf():
+        if self.is_left_child():
+            self.parent.leftChild = None
+        else:
+            self.parent.rightChild = None
+    elif self.has_any_children():
+        if self.has_left_child():
+            if self.is_left_child():
+                self.parent.leftChild = self.leftChild
+            else:
+                self.parent.rightChild = self.leftChild
+            self.leftChild.parent = self.parent
+        else:
+            if self.is_left_child():
+                self.parent.leftChild = self.rightChild
+            else:
+                self.parent.rightChild = self.rightChild
+            self.rightChild.parent = self.parent
+
 def find_successor(self):
     successor = None
     if self.has_right_child():
