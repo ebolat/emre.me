@@ -113,11 +113,67 @@ class BinaryTree:
         return self.root
 ```
 
+## Binary Tree Traversals ##
+
+*Traversing* is the task of **visiting all nodes of the tree at least once**. The tree is not a linear data structure, hence there are many ways of traversing it. 
+
+The three most commonly used traversing methods are; [pre-order](#pre-order-traversal), [in-order](#in-order-traversal) and [post-order](#post-order-traversal).
+
+![Binary Tree Traversals](https://cdn.emre.me/2019-07-26-binary-tree-abcdef.png){: .align-center}
+
+### Pre-order Traversal ###
+
+In this traversal mode, one starts from the *root*, move to *left child*, then *right child*.
+
+So in our case, order will be: **a**, **b**, **d**, **c**, **e**, **f**
+
+```python
+def pre_order(self):
+    print(self.value)
+
+    if self.left_child:
+        self.left_child.pre_order()
+
+    if self.right_child:
+        self.right_child.pre_order()
+```
+
+### In-order Traversal ###
+In this traversal mode, one starts visiting with the *left child*, followed by its *parent* and then the *right child*.
+
+So in our case, order will be: **b**, **d**, **a**, **e**, **c**, **f**
+
+```python
+def in_order(self):
+    if self.left:
+        self.left.in_order()
+
+    print(self.root)
+
+    if self.right:
+        self.right.in_order()
+```
+
+### Post-order Traversal ###
+
+In this traversal mode, one starts from the *left child*, move to the *right child*, and terminate at the *root*.
+
+So in our case, order will be: **d**, **b**, **e**, **f**, **c**, **a**
+
+```python
+def post_order(self):
+    if self.left:
+        self.left.post_order()
+
+    if self.right:
+        self.right.post_order()
+
+    print(self.root)
+```
+
 ### Example ###
 
-![Binary Tree](https://cdn.emre.me/2019-07-26-binary-tree-abcdef.png){: .align-center}
-
-To test our code, we can try to implement this tree.
+To test our code, we can try to implement the example tree in the traversals.
 
 So;
 - node **a** is our *root* node.
@@ -134,23 +190,27 @@ a_node = BinaryTree('a')
 a_node.insert_left('b')
 a_node.insert_right('c')
 
-b_node = a_node.left_child
+b_node = a_node.left
 b_node.insert_right('d')
 
-c_node = a_node.right_child
+c_node = a_node.right
 c_node.insert_left('e')
 c_node.insert_right('f')
 
-d_node = b_node.right_child
-e_node = c_node.left_child
-f_node = c_node.right_child
+d_node = b_node.right
+e_node = c_node.left
+f_node = c_node.right
 
-print(a_node.value) # a
-print(b_node.value) # b
-print(c_node.value) # c
-print(d_node.value) # d
-print(e_node.value) # e
-print(f_node.value) # f
+print(a_node.root)  # a
+print(b_node.root)  # b
+print(c_node.root)  # c
+print(d_node.root)  # d
+print(e_node.root)  # e
+print(f_node.root)  # f
+
+print(a_node.pre_order())  # abdcef
+print(a_node.in_order())  # bdaecf
+print(a_node.post_order())  # dbefca
 ```
 
 ## Summary ##
