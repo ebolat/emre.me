@@ -22,6 +22,7 @@
 ### Algorithms ###
 
 - [Search Algorithms](https://emre.me/algorithms/search-algorithms/) - 08.08.2019
+- [Sorting Algorithms with Animations](https://emre.me/algorithms/sorting-algorithms/) - 31.08.2019
 
 ### Basic Types ###
 

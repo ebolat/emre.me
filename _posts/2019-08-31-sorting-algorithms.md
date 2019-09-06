@@ -369,7 +369,7 @@ Whereas a sorting algorithm is said to be **unstable** if there are two or more 
 
 Any sorting algorithm may be made stable, at a price: The price is **O(n)** *extra space*, and *moderately increased* running time (*less than doubled*, most likely). [<sup>3</sup>](#references) [<sup>4</sup>](#references)
 
-## Time Complexities of Sorting Algorithms##
+## Time Complexities of Sorting Algorithms ##
 
 If we are talking about [algorithms](https://emre.me/categories/#algorithms), then the most important factor which affects our decision process is **time and space complexity**.
 
