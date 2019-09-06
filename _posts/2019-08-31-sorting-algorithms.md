@@ -101,7 +101,10 @@ def insertion_sort(array):
 ```
 
 ## Merge Sort ##
-Merge sort is a very good example of Divide and Conquer[<sup>2</sup>](#references) algorithms.
+Merge sort is a very good example of Divide and Conquer[<sup>2</sup>](#references) algorithms. We *recursively* split the list in *half* until we have lists with *size one*. We then *merge* each half that was *split*, *sorting* them in the process.
+
+**Sorting** is done by comparing the *smallest* elements of *each half*. The *first* element of each list are the first to be compared. If the first half begins with a *smaller* value, then we add that to the sorted list.
+
 ![Merge Sort](https://cdn.emre.me/sorting/merge_sort.gif){: .align-center}
 
 ### Implementation ###
@@ -201,7 +204,7 @@ def heap_sort(arr):
     return arr
 ```
 
-Luckly, there is a built-in Python library called `heapq` and we can implement *Heap Sort* very simply with using this library.
+Luckly, there is also a built-in Python library called `heapq` and we can implement *Heap Sort* very simply with using this library too.
 
 ```python
 import heapq
@@ -227,11 +230,11 @@ It has **3** steps:
 ### Choice of Pivot ###
 Selecting a good **pivot** value is key to *efficiency*. There are different strategies to select the pivot, which are;
 
-1. Picking the first element as pivot
-2. Picking the last element as pivot
-3. Picking a random element as pivot
-4. Picking the median as pivot
-5. Applying "median-of-three" rule (recommended by [Sedgewick](https://en.wikipedia.org/wiki/Robert_Sedgewick_%28computer_scientist%29)) which you look at the *first*, *middle* and *last* elements of the array, and choose the median of those three elements as the pivot.
+1. Picking the *first* element as pivot
+2. Picking the *last* element as pivot
+3. Picking a *random* element as pivot
+4. Picking the *median* as pivot
+5. Applying "*median-of-three*" rule (recommended by [Sedgewick](https://en.wikipedia.org/wiki/Robert_Sedgewick_%28computer_scientist%29)) which you look at the *first*, *middle* and *last* elements of the array, and choose the median of those three elements as the pivot.
 
 ### Hoare partition scheme ###
 [Hoare partition scheme](https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme) uses *two* indices that start at the ends of the array being partitioned, then move toward each other, until they detect an *inversion*: a pair of elements, one *greater than or equal to* the **pivot**, one *lesser or equal*, that are in the *wrong order relative to each other*. The inverted elements are then swapped. When the indices meet, the algorithm stops and returns the final index.
@@ -318,7 +321,7 @@ def quick_sort_helper(items, low, high):
 ## Python's Built-in Sort Functions ##
 While it's beneficial to understand these sorting algorithms, in most Python projects you would probably use the sort functions already provided in the language.
 
-These sort functions implement the [Tim Sort] algorithm, which is based on [Merge Sort](#merge-sort) and [Insertion Sort](#insertion-sort).
+These sort functions implement the [Tim Sort](https://en.wikipedia.org/wiki/Timsort) algorithm, which is based on [Merge Sort](#merge-sort) and [Insertion Sort](#insertion-sort).
 
 ![Tim Sort](https://cdn.emre.me/sorting/tim_sort.gif){: .align-center}
 
@@ -389,9 +392,9 @@ It depends. Everything in [Computer Science](https://en.wikipedia.org/wiki/Compu
 - [Quick sort](#quick-sort) is a good *default* choice. It tends to be *fast in practice*, and with some small tweaks its dreaded **O(n<sup>2</sup>)** *worst-case* time complexity becomes *very unlikely*. A tried and true favorite.
 - [Heap sort](#heap-sort) is a good choice if you can't tolerate a *worst-case* time complexity of **O(n<sup>2</sup>)** or need *low space* costs. The [Linux kernel](https://github.com/torvalds/linux) uses *heap sort* instead of *quick sort* for both of those reasons.
 - [Merge sort](#merge-sort) is a good choice if you want a *stable* sorting algorithm. Also, *merge sort* can easily be extended to handle *data sets that can't fit in RAM*, where the *bottleneck cost* is *reading* and *writing* the input on disk, not comparing and swapping individual items.
-- [Radix sort](#other-sorting-algorithms) looks fast, with its **O(n)** *worst-case* time complexity. But, if you're using it to sort *binary numbers*, then there's a hidden constant factor that's usually **32** or **64** (depending on how many bits your numbers are). That's often way bigger than **O(log(n))**, meaning *radix sort *tends to be slow in practice.
+- [Radix sort](#other-sorting-algorithms) looks fast, with its **O(n)** *worst-case* time complexity. But, if you're using it to sort *binary numbers*, then there's a hidden constant factor that's usually **32** or **64** (depending on how many bits your numbers are). That's often way bigger than **O(log(n))**, meaning *radix sort* tends to be slow in practice.
 
-So you have to know what's important in the problem you're working on. 
+So you have to know **what's important in the problem you're working on**. 
 
 - How large is your input? 
 - How many distinct values are in your input? 
@@ -402,7 +405,7 @@ Once you know what's important, you can pick the sorting algorithm that does it 
 
 ## Other Sorting Algorithms ##
 
-**Sorting** is a vast topic and it is not possible to coveer every Sorting Algorithm in this single post. It is also very popular research topic in academia and people are coming up with new sorting algorithms every year.
+**Sorting** is a vast topic and it is not possible to cover every Sorting Algorithm in this single post. It is also very popular research topic in academia and people are coming up with new sorting algorithms every year.
 
 There are also some funny ones coming from [Reddit](https://www.reddit.com/r/ProgrammerHumor/comments/9s9kgn/nononsense_sorting_algorithm/), like Stalin Sort[<sup>6</sup>](#references).
 
@@ -424,7 +427,7 @@ If you are curious, I created more animated gifs for;
 - [Smooth Sort](https://cdn.emre.me/sorting/smooth_sort.gif)
 
 
-For other algorithms which are not in the list, [Wikipedia](https://www.wikipedia.org/) is your friend. Even the least known sorting algorithms have their dedicated wiki page with some good explanation.
+For other algorithms which are not in the list, [Wikipedia](https://www.wikipedia.org/) is your friend. Even the least known sorting algorithms have their dedicated wiki pages with some good explanation.
 
 ## References ##
 1. Timo Bingmann, *[Sound of Sorting](https://panthema.net/2013/sound-of-sorting/)*
