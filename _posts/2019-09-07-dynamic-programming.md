@@ -15,7 +15,9 @@ toc_sticky: true
 
 *Dynamic programming* is all about breaking down an **optimization problem** into **simpler sub-problems**, and **storing** the solution to each sub-problem so that each sub-problem is **solved only once**.
 
-This method was developed by [Richard Bellman](https://en.wikipedia.org/wiki/Richard_E._Bellman) in the **1950s**. He explained the reasoning behind the name "*Dynamic Programming*" in his autobiography[<sup>1</sup>](#references) and the main reason was: "*to pick a term that didn’t sound like mathematical research*". He wrote that the *Secretary of Defense* at the time was biased against research. So he picked “*programming*”, which sounded less like mathematical research. He also wanted to get across the idea that it was multistage, so he picked “*dynamic*”. The final name was also hard to use in a negative way, even for a Congressman!
+This method was developed by [Richard Bellman](https://en.wikipedia.org/wiki/Richard_E._Bellman) in the **1950s**. He explained the reasoning behind the name "*Dynamic Programming*" in his autobiography[<sup>1</sup>](#references) and the main reason was: "*to pick a term that didn’t sound like mathematical research*". 
+
+He wrote that the *Secretary of Defense* at the time was biased against research. So he picked “*programming*”, which sounded less like *research*. He also wanted to get across the idea that it was multistage, so he picked “*dynamic*”. The final name was also hard to use in a negative way, even for a Congressman!
 
 ## Sub-problems ##
 We said that, it is all about *breaking down* the original problem into **simpler** *sub-problems*. But what is a **sub-problem**?
@@ -70,7 +72,7 @@ The main idea behind **Memoization** was to re-use already calculated sub-proble
 
 ![Recursion Tree](https://cdn.emre.me/2019-09-07-fibonacci-number.png){: .align-center}
 
-As you can see in the recursion tree, the same sub-problems occured more than once. For example `fib(3)` is occuring **twice**, `fib(2)` is occuring **3** times etc. 
+As you can see in the **recursion tree**, the same sub-problems occured more than once. For example `fib(3)` is occuring **twice**, `fib(2)` is occuring **3** times etc. 
 
 So, despite calculating the result of the **same problem**, again and again, we can *store* the results once and *use them again whenever needed*.
 
