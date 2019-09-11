@@ -97,10 +97,15 @@ The other way we could have solved the [Fibonacci](https://en.wikipedia.org/wiki
 
 ```python
 def fibonacci_tabulation(n):
-    f = [0, 1]
+    if n == 0:
+        return n
 
-    for _ in range(2, n + 1):
-        f.append(f[-1] + f[-2])
+	# pre-initialize array
+    f = [0] * (n + 1)
+    f[1] = 1
+
+    for i in range(2, n + 1):
+        f[i] = f[i - 1] + f[i - 2]
     return f[n]
 ```
 
@@ -108,9 +113,15 @@ def fibonacci_tabulation(n):
 
 Generally speaking, [memoization](#memoization) is easier to code than [tabulation](#tabulation). We can write a *memoriser* wrapper function that automatically does it for us. With [tabulation](#tabulation), we have to come up with an *ordering*.
 
-[Tabulation](#tabulation) is *faster*, as you already know the order and dimensions of the table. [Memoization](#memoization) is *slower*, because you are creating the table on the fly.
+Also, [memoization](#memoization) is indeed the natural way of solving a problem, so coding is easier in [memoization](#memoization) when we deal with a complex problem. Coming up with a specific order while dealing with lot of conditions might be difficult in the [tabulation](#tabulation).
+
+What is more, think about a case when we don't need to find the solutions of all the subproblems. In that case, we would prefer to use the [memoization](#memoization) instead.
+
+[Tabulation](#tabulation) is *faster*, as you already know the order and dimensions of the table. [Memoization](#memoization) is *slower*, because you are creating the table on the fly. Generally, [memoization](#memoization) is also slower than [tabulation](#tabulation) because of the large **recursive calls**.
 
 In [memoization](#memoization), table does *not have to be fully computed*, it is just a **cache** while in [tabulation](#tabulation), table is *fully computed*.
+
+If all sub-problems must be solved at least once, a **bottom-up** *tabulated* [dynamic programming](https://en.wikipedia.org/wiki/Dynamic_programming) algorithm usually outperforms a **top-down** *memoized* algorithm by a constant factor.
 
 ## References ##
 1. Wikipedia, *[Eye of the Hurricane: An Autobiography](https://www.amazon.com/Hurricane-Autobiography-Richard-Ernest-Bellman/dp/997196600X)*, (1984, page 159)
