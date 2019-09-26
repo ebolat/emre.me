@@ -18,6 +18,7 @@
 - [Heaps](https://emre.me/data-structures/heaps/) - 01.08.2019
 - [Hash Tables](https://emre.me/data-structures/hash-tables/) - 18.08.2019
 - [Binary Search Trees](https://emre.me/data-structures/binary-search-trees/) - 27.08.2019
+- [Graphs](https://emre.me/data-structures/graphs/) - 15.09.2019
 
 ### Algorithms ###
 
