@@ -28,7 +28,7 @@ I will introduce all of these built-in data structures in separate posts which c
 - [Binary Trees](https://emre.me/data-structures/binary-tree/)
 - [Heaps](https://emre.me/data-structures/heaps/)
 - [Hash Tables](https://emre.me/data-structures/hash-tables/)
-- Graphs
+- [Graphs](https://emre.me/data-structures/graphs/)
 
 Let's take a tour of these data structures together. 
 
