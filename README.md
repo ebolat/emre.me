@@ -24,6 +24,7 @@
 
 - [Search Algorithms](https://emre.me/algorithms/search-algorithms/) - 08.08.2019
 - [Sorting Algorithms with Animations](https://emre.me/algorithms/sorting-algorithms/) - 31.08.2019
+- [Dynamic Programming](https://emre.me/algorithms/dynamic-programming/) - 07.09.2019
 - [Greedy Algorithms](https://emre.me/algorithms/greedy-algorithms/) - 11.09.2019
 
 ### Basic Types ###
