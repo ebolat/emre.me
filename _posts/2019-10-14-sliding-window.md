@@ -33,7 +33,7 @@ Given an array consisting of **`n`** integers, find the *contiguous subarray* of
 
 {% endcapture %}
 
-<div class="notice--primary">
+<div class="notice--info">
   {{ notice | markdownify }}
 </div>
 
