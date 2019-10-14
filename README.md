@@ -30,3 +30,7 @@
 ### Basic Types ###
 
 - [Strings](https://emre.me/basic-types/strings/) - 17.05.2019
+
+### Coding Patterns ###
+
+- [Sliding Window](https://emre.me/coding-patterns/sliding-window/) - 14.10.2019
