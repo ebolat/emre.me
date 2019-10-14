@@ -18,21 +18,23 @@ First, we will introduce [Sliding Window](https://emre.me/coding-patterns/slidin
 
 ## Problem: Maximum Average Subarray ##
 
-{% capture notice-3 %}
-**[LeetCode 643 - Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)** 
+{% capture notice--primary %}
+**LeetCode 643 - Maximum Average Subarray I** ([link](https://leetcode.com/problems/maximum-average-subarray-i/))
 
 Given an array consisting of **`n`** integers, find the *contiguous subarray* of given length **`k`** that has the maximum average value. And you need to output the *maximum average value*.
 
 **Example:**
 
 **Input:** [1, 12, -5, -6, 50, 3], k = 4
+
 **Output:** 12.75
+
 **Explanation:** Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
 
 {% endcapture %}
 
-<div class="notice">
-  {{ notice-3 | markdownify }}
+<div class="notice--primary">
+  {{ notice--primary | markdownify }}
 </div>
 
 ### Brute Force Solution ###
@@ -57,7 +59,9 @@ class Solution:
         return max_average
 ```
 
-**Time Complexity**: **O(N*k)** where **`N`** is the number of elements in the input array. This solution exceeds the time limit defined by [Leetcode](https://leetcode.com/) and is **not accepted**.
+**Time Complexity**: **O(N*k)** where **`N`** is the number of elements in the input array. 
+
+This solution exceeds the time limit defined by [Leetcode](https://leetcode.com/) and is **not accepted**.
 
 If we check our example array again: `[1, 12, -5, -6, 50, 3]` for `k = 4`, there are 3 *overlapping* elements between subarrays `[1, 12, -5, -6]` and `[12, -5, -6, 50]`. Can we somehow reuse the `_sum` we have calculated for the *overlapping* elements to make our solution more efficient?
 
@@ -88,8 +92,8 @@ class Solution:
 ## How to identify? ##
 So we want to be able to identify the problems that [sliding window](https://emre.me/coding-patterns/sliding-window/) pattern works.
 
-* The problem involves a data structure that is ordered and iterable like arrays, strings, etc.
-* The problem is asking to find a subrange in an array/string, contiguous longest, shortest, average or target value.
+* The problem involves a data structure that is ordered and iterable like *arrays*, *strings*, etc.
+* The problem is asking to find a subrange in an *array*/*string*, contiguous *longest*, *shortest*, *average* or *target* value.
 * There is an apparent *naive* or [brute force](#brute-force-solution) solution that runs in **O(N<sup>2</sup>)**, **O(2<sup>N</sup>)** or some other large time complexity.
 
 The amazing thing about [sliding window](https://emre.me/coding-patterns/sliding-window/) problems is that most of the time they can be solved in **O(N)** time and **O(1)** space complexity.
