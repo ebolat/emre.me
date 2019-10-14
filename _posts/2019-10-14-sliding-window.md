@@ -18,7 +18,7 @@ First, we will introduce [Sliding Window](https://emre.me/coding-patterns/slidin
 
 ## Problem: Maximum Average Subarray ##
 
-{% capture notice--primary %}
+{% capture notice %}
 **LeetCode 643 - Maximum Average Subarray I** ([link](https://leetcode.com/problems/maximum-average-subarray-i/))
 
 Given an array consisting of **`n`** integers, find the *contiguous subarray* of given length **`k`** that has the maximum average value. And you need to output the *maximum average value*.
@@ -34,7 +34,7 @@ Given an array consisting of **`n`** integers, find the *contiguous subarray* of
 {% endcapture %}
 
 <div class="notice--primary">
-  {{ notice--primary | markdownify }}
+  {{ notice | markdownify }}
 </div>
 
 ### Brute Force Solution ###
