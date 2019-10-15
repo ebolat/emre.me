@@ -100,4 +100,4 @@ The amazing thing about [sliding window](https://emre.me/coding-patterns/sliding
 
 ## Similar LeetCode Problems ##
 
-A list of similar problems is going to be updated...
+* [LeetCode 209 - Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
