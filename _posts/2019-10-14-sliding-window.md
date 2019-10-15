@@ -19,7 +19,7 @@ First, we will introduce [Sliding Window](https://emre.me/coding-patterns/slidin
 ## Problem: Maximum Average Subarray ##
 
 {% capture notice %}
-**LeetCode 643 - Maximum Average Subarray I** [*easy*]  ([link](https://leetcode.com/problems/maximum-average-subarray-i/))
+[**LeetCode 643 - Maximum Average Subarray I** [*easy*]](https://leetcode.com/problems/maximum-average-subarray-i/)
 
 Given an array consisting of **`n`** integers, find the *contiguous subarray* of given length **`k`** that has the maximum average value. And you need to output the *maximum average value*.
 
