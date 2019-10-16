@@ -101,3 +101,4 @@ The amazing thing about [sliding window](https://emre.me/coding-patterns/sliding
 ## Similar LeetCode Problems ##
 
 * [LeetCode 209 - Minimum Size Subarray Sum [*medium*]](https://leetcode.com/problems/minimum-size-subarray-sum/)
+* [LeetCode 904 - Fruit Into Baskets [*medium*]](https://leetcode.com/problems/fruit-into-baskets/)
