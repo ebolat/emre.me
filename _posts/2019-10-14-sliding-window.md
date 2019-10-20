@@ -101,8 +101,11 @@ The amazing thing about [sliding window](https://emre.me/coding-patterns/sliding
 ## Similar LeetCode Problems ##
 
 * [LeetCode 3 - Longest Substring Without Repeating Characters [*medium*]](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+* [LeetCode 30 - Substring with Concatenation of All Words [*hard*]](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+* [LeetCode 76 - Minimum Window Substring [*hard*]](https://leetcode.com/problems/minimum-window-substring/)
 * [LeetCode 209 - Minimum Size Subarray Sum [*medium*]](https://leetcode.com/problems/minimum-size-subarray-sum/)
 * [LeetCode 424 - Longest Repeating Character Replacement [*medium*]](https://leetcode.com/problems/longest-repeating-character-replacement/)
+* [LeetCode 438 - Find All Anagrams in a String [*medium*]](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 * [LeetCode 567 - Permutation in String [*medium*]](https://leetcode.com/problems/permutation-in-string/)
 * [LeetCode 904 - Fruit Into Baskets [*medium*]](https://leetcode.com/problems/fruit-into-baskets/)
 * [LeetCode 1004 - Max Consecutive Ones III [*medium*]](https://leetcode.com/problems/max-consecutive-ones-iii/)
