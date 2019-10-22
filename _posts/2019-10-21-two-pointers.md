@@ -19,6 +19,7 @@ Previous post was about [Sliding Window](https://emre.me/coding-patterns/sliding
 ## Problem: Pair with Target Sum ##
 {% capture notice %}
 [**LeetCode 1 - Two Sum** [*easy*]](https://leetcode.com/problems/two-sum/)
+
 Given an array of integers, return indices of the **two** numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -35,10 +36,10 @@ Because nums[0] + nums[1] = 2 + 7 = 9, return **[0, 1]**.
 </div>
 
 ### Two Pointers Solution ###
-With using the [Two Pointers](https://emre.me/coding-patterns/two-pointers/) pattern, and *Pointer 1* pointing to the beginning of the array and *pointer 2* pointing to the end of the array, we will check if the numbers pointed by the pointers add up to the target sum. If they do, we have found our pair. If not, we should do one of these things:
+With using the [Two Pointers](https://emre.me/coding-patterns/two-pointers/) pattern, and *Pointer 1* pointing to the beginning of the array and *Pointer 2* pointing to the end of the array, we will check if the numbers pointed by the pointers add up to the target sum. If they do, we have found our pair. If not, we should do one of these things:
 
-* If the sum is bigger than the target sum, this means that we need a smaller sum so, we are going to decrement the Pointer 2 (end-pointer).
-* If the sum is smaller than the target sum, this means that we need a bigger sum so, we are going to increment the Pointer 1 (start-pointer).
+* If the sum is *bigger* than the target sum, this means that we need a *smaller* sum so, we are going to *decrement* the *Pointer 2* (end-pointer).
+* If the sum is *smaller* than the target sum, this means that we need a *bigger* sum so, we are going to *increment* the *Pointer 1* (start-pointer).
 
 ![Two Pointers](https://cdn.emre.me/2019-10-21-two-pointers.png){: .align-center}
 
@@ -66,7 +67,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
 ### An Alternative Solution ###
 Instead of using the [Two Pointers Solution](#two-pointers-solution), we can use a [HashTable](https://emre.me/data-structures/hash-tables/) to solve the problem.
 
-We are searching the array for **2** items, **`x`** and **`y`** where **`x + y = target`**. This means that, during our iteration when we are at number **`x`**, we are looking for a **`y`** (which is equivalent to **`target - x`**, simple mathemathics!).
+We are searching the array for **2** items, **`x`** and **`y`** where **`x + y = target`**. This means that, during our iteration when we are at number **`x`**, we are looking for a **`y`** (which is equivalent to **`target - x`**, basic maths!).
 
 If we found a **`target - x`** value in **HashTable**, we found our pair! If not, we will insert **`x`** into the **HashTable**, so that we can search for it later.
 
