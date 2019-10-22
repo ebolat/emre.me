@@ -34,3 +34,4 @@
 ### Coding Patterns ###
 
 - [Sliding Window](https://emre.me/coding-patterns/sliding-window/) - 14.10.2019
+- [Two Pointers](https://emre.me/coding-patterns/two-pointers/) - 21.10.2019
