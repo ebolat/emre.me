@@ -96,3 +96,5 @@ Most of these type of problems can be solved in **O(N)** *time complexity* and *
 
 ## Similar LeetCode Problems ##
 * [LeetCode 26 - Remove Duplicates from Sorted Array [*easy*]](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+* [LeetCode 27 - Remove Element [*easy*]](https://leetcode.com/problems/remove-element/)
+* [LeetCode 977 - Squares of a Sorted Array [*easy*]](https://leetcode.com/problems/squares-of-a-sorted-array/)
