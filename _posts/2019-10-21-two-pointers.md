@@ -95,6 +95,7 @@ So we want to be able to identify the problems that [Two Pointers](https://emre.
 Most of these type of problems can be solved in **O(N)** *time complexity* and **O(1)** or **O(N)** *space complexity*.
 
 ## Similar LeetCode Problems ##
+* [LeetCode 15 - 3sum [*medium*]](https://leetcode.com/problems/3sum/)
 * [LeetCode 26 - Remove Duplicates from Sorted Array [*easy*]](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 * [LeetCode 27 - Remove Element [*easy*]](https://leetcode.com/problems/remove-element/)
 * [LeetCode 977 - Squares of a Sorted Array [*easy*]](https://leetcode.com/problems/squares-of-a-sorted-array/)
