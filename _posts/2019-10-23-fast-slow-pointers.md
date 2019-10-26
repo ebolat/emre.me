@@ -48,7 +48,9 @@ To represent a cycle in the given linked list, we use an integer `pos` which rep
 **Example 3:**
 
 **Input:** `head` = [1], `pos` = -1
+
 **Output:** false
+
 **Explanation:** There is no cycle in the linked list.
 
 ![Circular Linked List - Test 3](https://cdn.emre.me/2019-10-23-circularlinkedlist-test3.png){: .align-center}
@@ -64,7 +66,7 @@ Can you solve it using **O(1)** (i.e. constant) memory?
 
 ### Fast & Slow Pointers Solution ###
 
-If you need to refresh your knowledge in [Linked Lists](https://emre.me/data-structures/linked-lists/), I would suggest to do so before jumping in to solution.
+If you need to refresh your knowledge in [Linked Lists](https://emre.me/data-structures/linked-lists/), I would suggest to do so before jumping into the solution.
 
 Imagine two racers running in a **circular** racing track. If one racer is *faster* than the other, the *faster* racer is bound to catch up and cross the *slower* racer from behind. In each iteration, **Tortoise** :turtle: (*slow* pointer) moves *one* step and the **Hare** :rabbit2: (*fast* pointer) moves *two* steps.
 
@@ -132,7 +134,9 @@ Note: Do not modify the linked list.
 **Example 3:**
 
 **Input:** `head` = [1], `pos` = -1
+
 **Output:** no cycle
+
 **Explanation:** There is no cycle in the linked list.
 
 ![Circular Linked List - Test 3](https://cdn.emre.me/2019-10-23-circularlinkedlist-test3.png){: .align-center}
