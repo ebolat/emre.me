@@ -208,3 +208,4 @@ When the problem involves something related to **cyclic** data structures, you s
 
 ## Similar LeetCode Problems ##
 * [LeetCode 202 - Happy Number [*easy*]](https://leetcode.com/problems/happy-number/)
+* [LeetCode 876 - Middle of the Linked List [*easy*]](https://leetcode.com/problems/middle-of-the-linked-list/)
