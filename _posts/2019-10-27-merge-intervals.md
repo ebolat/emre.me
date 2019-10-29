@@ -95,6 +95,7 @@ When the problem involves these clue words, you should think about [Merge Interv
 
 ## Similar LeetCode Problems ##
 * [LeetCode 57 - Insert Interval [*hard*]](https://leetcode.com/problems/insert-interval/)
+* [LeetCode 986 - Interval List Intersections [*medium*]](https://leetcode.com/problems/interval-list-intersections/)
 
 
 
