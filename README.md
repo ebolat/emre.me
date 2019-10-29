@@ -36,3 +36,5 @@
 - [Sliding Window](https://emre.me/coding-patterns/sliding-window/) - 14.10.2019
 - [Two Pointers](https://emre.me/coding-patterns/two-pointers/) - 21.10.2019
 - [Fast & Slow Pointers](https://emre.me/coding-patterns/fast-slow-pointers/) - 23.10.2019
+- [Merge Intervals](https://emre.me/coding-patterns/merge-intervals/) - 27.10.2019
+- [Cyclic Sort](https://emre.me/coding-patterns/cyclic-sort/) - 28.10.2019
