@@ -81,4 +81,6 @@ This approach is quite useful when dealing with numbers in a given range and ask
 When the problem involving arrays containing numbers in a given range, you should think about [Cyclic Sort](https://emre.me/coding-patterns/cyclic-sort/) pattern.
 
 ## Similar LeetCode Problems ##
+* [LeetCode 442 - Find All Duplicates in an Array [*medium*]](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
 * [LeetCode 448 - Find All Numbers Disappeared in an Array [*easy*]](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+* [LeetCode 645 - Set Mismatch [*easy*]](https://leetcode.com/problems/set-mismatch/)
