@@ -36,9 +36,9 @@ Reverse a singly linked list.
 
 ### In-Place Reversal Solution ###
 
-We are going to reverse one node at a time. We will start with a variable **`current`** which will initially point to the **`head`** of the Linked List and a variable **`previous`** which will point to the *previous node* that we have processed; initially **`previous`** will point to **`null`**.
+We are going to reverse one node at a time. We will start with a variable `current` which will initially point to the `head` of the Linked List and a variable `previous` which will point to the *previous node* that we have processed; initially `previous` will point to `null`.
 
-We will reverse the **`current`** node by pointing it to the **`previous`** before moving on to the next node. Also, we will update the **`previous`** to always point to the previous node that we have processed.
+We will reverse the `current` node by pointing it to the `previous` before moving on to the next node. Also, we will update the `previous` to always point to the previous node that we have processed.
 
 ![In-Place Reversal of a Linked List](https://cdn.emre.me/2019-11-04-in-place-reversal.gif){: .align-center}
 
