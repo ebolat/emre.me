@@ -87,6 +87,10 @@ class Solution:
         merged.append([start, end])  # add the last interval
         return merged
 ```
+**Time Complexity**: **O(N * log N)** where **N** is the total number of intervals. In the beginning, since we sort the intervals, our algorithm will take **O(N * log N)** to run.
+
+**Space Complexity**: **O(N)**, as we need to return a list containing all the merged intervals.
+
 ## How to identify? ##
 
 This approach is quite useful when dealing with *intervals*, *overlapping items* or *merging intervals*.
