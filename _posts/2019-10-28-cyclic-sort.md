@@ -73,6 +73,9 @@ class Solution:
 
         return len(nums)
 ```
+**Time Complexity**: **O(N) + O(N - 1)** which is asymptotically equivalent to **O(N)**
+
+**Space Complexity**: **O(1)**, algorithm runs in constant space.
 
 ## How to identify? ##
 
