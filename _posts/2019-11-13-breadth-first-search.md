@@ -28,7 +28,11 @@ Given a binary tree, return the level order traversal of its nodes' values. (ie,
 
 Given binary tree: *[3, 9, 20, null, null, 15, 7]*
 
-return its level order traversal as: *[[3], [9, 20], [15, 7]]*
+![Binary Tree](https://cdn.emre.me/2019-11-13-level-order-traversal-tree.png){: .align-center}
+
+return its level order traversal as:
+
+![Binary Tree](https://cdn.emre.me/2019-11-13-level-order-traversal-array.png){: .align-center}
 
 {% endcapture %}
 
