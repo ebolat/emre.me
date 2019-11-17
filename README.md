@@ -38,3 +38,6 @@
 - [Fast & Slow Pointers](https://emre.me/coding-patterns/fast-slow-pointers/) - 23.10.2019
 - [Merge Intervals](https://emre.me/coding-patterns/merge-intervals/) - 27.10.2019
 - [Cyclic Sort](https://emre.me/coding-patterns/cyclic-sort/) - 28.10.2019
+- [In-place Reversal of a Linked List](https://emre.me/coding-patterns/in-place-reversal-of-a-linked-list/) - 04.11.2019
+- [Breadth First Search (BFS)](https://emre.me/coding-patterns/breadth-first-search/) - 13.11.2019
+- [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/) - 14.11.2019
