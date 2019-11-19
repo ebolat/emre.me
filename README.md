@@ -41,3 +41,5 @@
 - [In-place Reversal of a Linked List](https://emre.me/coding-patterns/in-place-reversal-of-a-linked-list/) - 04.11.2019
 - [Breadth First Search (BFS)](https://emre.me/coding-patterns/breadth-first-search/) - 13.11.2019
 - [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/) - 14.11.2019
+- [Two Heaps](https://emre.me/coding-patterns/two-heaps/) - 18.11.2019
+- [Subsets](https://emre.me/coding-patterns/subsets/) - 19.11.2019
