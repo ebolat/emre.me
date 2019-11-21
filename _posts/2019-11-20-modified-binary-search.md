@@ -20,7 +20,7 @@ This pattern describes an efficient way to handle all problems involving [Binary
 
 ## Problem: Binary Search ##
 {% capture notice %}
-[**LeetCode 704 - Binary Search** [*easy*]](https://leetcode.com/problems/easy/)
+[**LeetCode 704 - Binary Search** [*easy*]](https://leetcode.com/problems/binary-search/)
 
 Given a sorted (in ascending order) integer array `nums` of **n** elements and a `target` value, write a function to search `target` in `nums`. If `target` exists, then return its index, otherwise return **-1**.
 
@@ -85,7 +85,7 @@ int mid = start + (end - start) / 2;
 
 - If `target > nums[mid]`, then we can conclude that `target` will be **greater** than all numbers before index `mid` as the array is sorted in the ascending order. We can reduce our search to `start = mid + 1`.
 
-![Binary Search](2019-08-08-binary-search.png){: .align-center}
+![Binary Search](https://cdn.emre.me/2019-08-08-binary-search.png){: .align-center}
 
 ```python
 from typing import List
