@@ -43,3 +43,4 @@
 - [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/) - 14.11.2019
 - [Two Heaps](https://emre.me/coding-patterns/two-heaps/) - 18.11.2019
 - [Subsets](https://emre.me/coding-patterns/subsets/) - 19.11.2019
+- [Modified Binary Search](https://emre.me/coding-patterns/modified-binary-search/) - 20.11.2019
