@@ -100,4 +100,5 @@ Most of these type of problems can be solved in **O(N)** *time complexity* and *
 * [LeetCode 26 - Remove Duplicates from Sorted Array [*easy*]](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 * [LeetCode 27 - Remove Element [*easy*]](https://leetcode.com/problems/remove-element/)
 * [LeetCode 259 - 3Sum Smaller [*medium*] [*premium*]](https://leetcode.com/problems/3sum-smaller)
+* [LeetCode 713 - Subarray Product Less Than K [*medium*]](https://leetcode.com/problems/subarray-product-less-than-k/)
 * [LeetCode 977 - Squares of a Sorted Array [*easy*]](https://leetcode.com/problems/squares-of-a-sorted-array/)
