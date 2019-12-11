@@ -44,7 +44,7 @@ Given the total number of courses and a list of prerequisite pairs, is it possib
 
 **Note:**
 
-1. The input **prerequisites** is a graph represented by a list of **edges**, not adjacency matrices. Read more about how a graph is represented.
+1. The input **prerequisites** is a graph represented by a list of **edges**, not adjacency matrices. Read more about how a [graph](https://emre.me/data-structures/graphs/) is represented.
 2. You may assume that there are no duplicate **edges** in the input **prerequisites**.
 
 {% endcapture %}
