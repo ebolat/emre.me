@@ -46,3 +46,5 @@
 - [Modified Binary Search](https://emre.me/coding-patterns/modified-binary-search/) - 20.11.2019
 - [Top K Numbers](https://emre.me/coding-patterns/top-k-numbers) - 21.11.2019
 - [K-way Merge](https://emre.me/coding-patterns/k-way-merge) - 22.11.2019
+- [0/1 Knapsack](https://emre.me/coding-patterns/knapsack) - 29.11.2019
+- [Topological Sort](https://emre.me/coding-patterns/topological-sort) - 30.11.2019
