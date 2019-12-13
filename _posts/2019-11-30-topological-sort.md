@@ -8,7 +8,7 @@ categories:
 tags:
   - algorithms
   - python
-  - graph
+  - graphs
 toc: true
 toc_sticky: true
 ---
