@@ -48,3 +48,4 @@
 - [K-way Merge](https://emre.me/coding-patterns/k-way-merge) - 22.11.2019
 - [0/1 Knapsack](https://emre.me/coding-patterns/knapsack) - 29.11.2019
 - [Topological Sort](https://emre.me/coding-patterns/topological-sort) - 30.11.2019
+- [Bitwise XOR](https://emre.me/coding-patterns/bitwise-xor) - 11.12.2019
