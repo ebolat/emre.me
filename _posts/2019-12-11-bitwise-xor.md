@@ -25,7 +25,7 @@ If you are not familiar with **binary computation** and **bit manipulation**, I 
 {% capture notice %}
 [**LeetCode 136 - Single Number** [*easy*]](https://leetcode.com/problems/single-number/)
 
-Given a non-empty array of integers, every element appears **twice** except for **one*. Find that *single one*.
+Given a non-empty array of integers, every element appears **twice** except for *one*. Find that *single one*.
 
 **Note:**
 
@@ -112,6 +112,9 @@ One group will have all those numbers with that bit set to **0** and the other w
 We can take [XOR](https://emre.me/computer-science/binary-computation-and-bitwise-operators/#xor-operator) of all numbers in each group separately to get `num1` and `num2`, as all other numbers in each group will cancel each other.
 
 ```python
+from typing import List
+
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
 
@@ -127,7 +130,7 @@ class Solution:
 
         num1, num2 = 0, 0
         
-		for num in nums:
+        for num in nums:
             if num & rightmost_bit != 0:  # the bit is set
                 num1 ^= num
             else:  # the bit is not set
