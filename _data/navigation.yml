@@ -4,3 +4,5 @@ main:
     url: https://emre.me/categories
   - title: "tags"
     url: https://emre.me/tags
+  - title: "newsletter"
+    url: https://emre.me/newsletter
