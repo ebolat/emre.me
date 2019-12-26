@@ -101,5 +101,7 @@ Most of these type of problems can be solved in **O(N)** *time complexity* and *
 * [LeetCode 27 - Remove Element [*easy*]](https://leetcode.com/problems/remove-element/)
 * [LeetCode 75 - Sort Colors [*medium*]](https://leetcode.com/problems/sort-colors/)
 * [LeetCode 259 - 3Sum Smaller [*medium*] [*premium*]](https://leetcode.com/problems/3sum-smaller)
+* [LeetCode 349 - Intersection of Two Arrays [*easy*]](https://leetcode.com/problems/intersection-of-two-arrays/)
+* [LeetCode 350 - Intersection of Two Arrays II [*easy*]](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
 * [LeetCode 713 - Subarray Product Less Than K [*medium*]](https://leetcode.com/problems/subarray-product-less-than-k/)
 * [LeetCode 977 - Squares of a Sorted Array [*easy*]](https://leetcode.com/problems/squares-of-a-sorted-array/)
