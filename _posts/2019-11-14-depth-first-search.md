@@ -75,5 +75,6 @@ This approach is quite useful when dealing with the problems involving traversal
 When the problem asks the traversal of a tree, you should think about [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/) pattern and using it in combination with a recursive approach.
 
 ## Similar LeetCode Problems ##
+* [LeetCode 110 - Balanced Binary Tree [*easy*]](https://leetcode.com/problems/balanced-binary-tree/)
 * [LeetCode 113 - Path Sum II [*medium*]](https://leetcode.com/problems/path-sum-ii/)
 * [LeetCode 129 - Sum Root to Leaf Numbers [*medium*]](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
