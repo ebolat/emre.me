@@ -38,8 +38,8 @@ Given n will be a positive integer.
 
 **Explanation:** There are two ways to climb to the top.
 
-* 1 step + 1 step
-* 2 steps
+* **1** step + **1** step
+* **2** steps
 
 **Example 2:**
 
@@ -49,9 +49,9 @@ Given n will be a positive integer.
 
 **Explanation:** There are three ways to climb to the top.
 
-* 1 step + 1 step + 1 step
-* 1 step + 2 steps
-* 2 steps + 1 step
+* **1** step + **1** step + **1** step
+* **1** step + **2** steps
+* **2** steps + **1** step
 
 {% endcapture %}
 
