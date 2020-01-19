@@ -15,7 +15,7 @@ toc_sticky: true
 
 In **[Coding Patterns](https://emre.me/categories/#coding-patterns)** series, we will try to *recognize* common patterns *underlying* behind each algorithm question, using real examples from [Leetcode](https://leetcode.com/).
 
-Previous posts were about [Sliding Window](https://emre.me/coding-patterns/sliding-window/), [Two Pointers](https://emre.me/coding-patterns/two-pointers/), [Fast & Slow Pointers](https://emre.me/coding-patterns/fast-slow-pointers/), [Merge Intervals](https://emre.me/coding-patterns/merge-intervals/), [Cyclic Sort](https://emre.me/coding-patterns/cyclic-sort/), [In-place Reversal of a Linked List](https://emre.me/coding-patterns/in-place-reversal-of-a-linked-list/), [Breadth First Search (BFS)](https://emre.me/coding-patterns/breadth-first-search/), [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), [Two Heaps](https://emre.me/coding-patterns/two-heaps/), [Subsets](https://emre.me/coding-patterns/subsets/), [Modified Binary Search](https://emre.me/coding-patterns/modified-binary-search/), [Top K Numbers](https://emre.me/coding-patterns/top-k-numbers), [K-way Merge](https://emre.me/coding-patterns/k-way-merge), [0/1 Knapsack](https://emre.me/coding-patterns/knapsack), [Topological Sort](https://emre.me/coding-patterns/topological-sort) and [Bitwise XOR](https://emre.me/coding-patterns/bitwise-xor) patterns and today, we will introduce [Staircase](https://emre.me/coding-patterns/fibonacci-numbers) pattern which is very useful to solve [Dynamic Programming](https://emre.me/algorithms/dynamic-programming/) problems involving minimum / maximum steps, jumps, stairs, fibonacci numbers etc. to reach a target.
+Previous posts were about [Sliding Window](https://emre.me/coding-patterns/sliding-window/), [Two Pointers](https://emre.me/coding-patterns/two-pointers/), [Fast & Slow Pointers](https://emre.me/coding-patterns/fast-slow-pointers/), [Merge Intervals](https://emre.me/coding-patterns/merge-intervals/), [Cyclic Sort](https://emre.me/coding-patterns/cyclic-sort/), [In-place Reversal of a Linked List](https://emre.me/coding-patterns/in-place-reversal-of-a-linked-list/), [Breadth First Search (BFS)](https://emre.me/coding-patterns/breadth-first-search/), [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), [Two Heaps](https://emre.me/coding-patterns/two-heaps/), [Subsets](https://emre.me/coding-patterns/subsets/), [Modified Binary Search](https://emre.me/coding-patterns/modified-binary-search/), [Top K Numbers](https://emre.me/coding-patterns/top-k-numbers), [K-way Merge](https://emre.me/coding-patterns/k-way-merge), [0/1 Knapsack](https://emre.me/coding-patterns/knapsack), [Topological Sort](https://emre.me/coding-patterns/topological-sort) and [Bitwise XOR](https://emre.me/coding-patterns/bitwise-xor) patterns and today, we will introduce [Staircase](https://emre.me/coding-patterns/staircase) pattern which is very useful to solve [Dynamic Programming](https://emre.me/algorithms/dynamic-programming/) problems involving minimum / maximum steps, jumps, stairs, fibonacci numbers etc. to reach a target.
 
 If you need to refresh your knowledge of [Dynamic Programming](https://emre.me/algorithms/dynamic-programming/), you may want to check the [Fibonacci Number Problem](https://emre.me/algorithms/dynamic-programming/#memoization) before diving into more advanced problems.
 
@@ -38,8 +38,8 @@ Given n will be a positive integer.
 
 **Explanation:** There are two ways to climb to the top.
 
-1. 1 step + 1 step
-2. 2 steps
+* 1 step + 1 step
+* 2 steps
 
 **Example 2:**
 
@@ -49,9 +49,9 @@ Given n will be a positive integer.
 
 **Explanation:** There are three ways to climb to the top.
 
-1. 1 step + 1 step + 1 step
-2. 1 step + 2 steps
-3. 2 steps + 1 step
+* 1 step + 1 step + 1 step
+* 1 step + 2 steps
+* 2 steps + 1 step
 
 {% endcapture %}
 
@@ -197,7 +197,7 @@ class Solution:
 
 ## How to identify? ##
 
-[Staircase](https://emre.me/coding-patterns/fibonacci-numbers) pattern is very useful to solve [Dynamic Programming](https://emre.me/algorithms/dynamic-programming/) problems involving minimum / maximum steps, jumps, stairs, fibonacci numbers etc. to reach a target.
+[Staircase](https://emre.me/coding-patterns/staircase) pattern is very useful to solve [Dynamic Programming](https://emre.me/algorithms/dynamic-programming/) problems involving minimum / maximum steps, jumps, stairs, fibonacci numbers etc. to reach a target.
 
 ## Similar LeetCode Problems ##
 * [LeetCode 62 - Unique Paths [*medium*]](https://leetcode.com/problems/unique-paths/)
