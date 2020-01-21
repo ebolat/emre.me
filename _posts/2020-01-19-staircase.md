@@ -203,3 +203,4 @@ class Solution:
 * [LeetCode 62 - Unique Paths [*medium*]](https://leetcode.com/problems/unique-paths/)
 * [LeetCode 91 - Decode Ways [*medium*]](https://leetcode.com/problems/decode-ways/)
 * [LeetCode 509 - Fibonacci Number [*easy*]](https://leetcode.com/problems/fibonacci-number/)
+* [LeetCode 1155 - Number of Dice Rolls With Target Sum [*medium*]](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/)
