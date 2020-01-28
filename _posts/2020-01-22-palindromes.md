@@ -53,7 +53,7 @@ One possible longest palindromic subsequence is "bb".
 > 
 > Sentence-length palindromes may be written when allowances are made for adjustments to capital letters, punctuation, and word dividers, such as "*A man, a plan, a canal, Panama!*", "*Was it a car or a cat I saw?*" etc.[<sup>1</sup>](#references)
 
-As a **brute force** solution, we can try all the *subsequences* of the given *sequence*. Starting from the beginning and the end of the sequence;
+As a **brute force** solution, we can try all *subsequences* of the given *sequence*. Starting from the beginning and the end of the sequence;
 * if the elements at the beginning and the end are the same, we can increment the counter by **2** and make a recursive call to remaining subsequences
 * we will skip one element either from the beginning or from the end o make two recursive calls for the remaining subsequence
 

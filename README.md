@@ -51,3 +51,4 @@
 - [Bitwise XOR](https://emre.me/coding-patterns/bitwise-xor) - 11.12.2019
 - [Staircase](https://emre.me/coding-patterns/staircase) - 19/01/2020
 - [Palindromes](https://emre.me/coding-patterns/staircase) - 22/01/2020
+- [Longest Common Substring / Subsequence](https://emre.me/coding-patterns/longest-common-substring-subsequence) - 27/01/2020
