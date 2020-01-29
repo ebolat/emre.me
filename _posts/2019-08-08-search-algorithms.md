@@ -8,7 +8,6 @@ categories:
 tags:
   - python
   - search
-  - searching
   - algorithms
 toc: true
 toc_sticky: true
