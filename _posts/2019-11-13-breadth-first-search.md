@@ -101,4 +101,5 @@ When the problem asks the traversal of a tree, you should think about [Breadth F
 
 ## Similar LeetCode Problems ##
 * [LeetCode 107 - Binary Tree Level Order Traversal II [*easy*]](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
+* [LeetCode 994 - Rotting Oranges [*easy*]](https://leetcode.com/problems/rotting-oranges/)
 * [LeetCode 1197 - Minimum Knight Moves [*medium*] [*premium*]](https://leetcode.com/problems/minimum-knight-moves/)
