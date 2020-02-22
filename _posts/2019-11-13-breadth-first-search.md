@@ -100,6 +100,7 @@ This approach is quite useful when dealing with the problems involving traversal
 When the problem asks the traversal of a tree, you should think about [Breadth First Search (BFS)](https://emre.me/coding-patterns/breadth-first-search/) pattern and using it in combination with the [Queue](https://emre.me/data-structures/stacks-and-queues/#queues) structure.
 
 ## Similar LeetCode Problems ##
+* [LeetCode 103 - Binary Tree Zigzag Level Order Traversal [*medium*]](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
 * [LeetCode 107 - Binary Tree Level Order Traversal II [*easy*]](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)
 * [LeetCode 994 - Rotting Oranges [*easy*]](https://leetcode.com/problems/rotting-oranges/)
 * [LeetCode 1197 - Minimum Knight Moves [*medium*] [*premium*]](https://leetcode.com/problems/minimum-knight-moves/)
