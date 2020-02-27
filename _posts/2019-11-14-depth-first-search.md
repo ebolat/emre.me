@@ -79,3 +79,4 @@ When the problem asks the traversal of a tree, you should think about [Depth Fir
 * [LeetCode 113 - Path Sum II [*medium*]](https://leetcode.com/problems/path-sum-ii/)
 * [LeetCode 129 - Sum Root to Leaf Numbers [*medium*]](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 * [LeetCode 200 - Number of Islands [*medium*]](https://leetcode.com/problems/number-of-islands/)
+* [LeetCode 437 - Path Sum III [*easy*]](https://leetcode.com/problems/path-sum-iii/)
