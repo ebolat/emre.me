@@ -99,6 +99,7 @@ Most of these type of problems can be solved in **O(N)** *time complexity* and *
 * [LeetCode 16 - 3Sum Closest [*medium*]](https://leetcode.com/problems/3sum-closest/)
 * [LeetCode 26 - Remove Duplicates from Sorted Array [*easy*]](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 * [LeetCode 27 - Remove Element [*easy*]](https://leetcode.com/problems/remove-element/)
+* [LeetCode 42 - Trapping Rain Water [*hard*]](https://leetcode.com/problems/trapping-rain-water/)
 * [LeetCode 75 - Sort Colors [*medium*]](https://leetcode.com/problems/sort-colors/)
 * [LeetCode 125 - Valid Palindrome [*easy*]](https://leetcode.com/problems/valid-palindrome/)
 * [LeetCode 259 - 3Sum Smaller [*medium*] [*premium*]](https://leetcode.com/problems/3sum-smaller)
