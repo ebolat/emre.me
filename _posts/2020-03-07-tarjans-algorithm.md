@@ -1,8 +1,7 @@
 ---
 title: "Tarjan's Algorithm: Strongly Connected Components"
-tagline: ""
 header:
-  overlay_image: https://cdn.emre.me/2020-03-07-tarjans-algorithm-header-image.jpg
+  image: https://cdn.emre.me/2020-03-07-tarjans-algorithm-header-image.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/ubQDHALqKiM)"
 categories:
   - algorithms
@@ -86,15 +85,17 @@ Return all critical connections in the network in any order.
 
 ![Critical Connections](https://cdn.emre.me/2020-03-07-critical-connections.png)
 
-```python
-Input: n = 4, connections = [[0, 1], [1, 2], [2, 0], [1, 3]]
-Output: [[1, 3]]
-Explanation: [[3, 1]] is also accepted.
-```
+
+`Input: n = 4, connections = [[0, 1], [1, 2], [2, 0], [1, 3]]`
+
+`Output: [[1, 3]]`
+
+`Explanation: [[3, 1]] is also accepted.`
+
 **Constraints:**
 
-- **1** <= `n` <= **10^5**
-- **n-1** <= `connections.length` <= **10^5**
+- 1 <= `n` <= 10<sup>5</sup>
+- `n-1` <= `connections.length` <= 10<sup>5</sup>
 - `connections[i][0] != connections[i][1]`
 - There are no repeated connections.
 
