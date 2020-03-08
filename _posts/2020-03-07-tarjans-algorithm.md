@@ -46,7 +46,7 @@ Nodes marked with *orange color* are **articulation points** because if you remo
 #### What is Low Link? ####
 **Low Link Value** of a node is defined as the smallest `id` reachable from that node when doing a [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), including itself.
 
-Initially, all [low link](#what-is-low-link) values can be initialized to the each node `id`s.
+Initially, all [low link](#what-is-low-link) values can be initialized to the each node `id`.
 
 ![Low Link Initial](https://cdn.emre.me/2020-03-07-low-link1.png)
 
@@ -56,7 +56,7 @@ So, we should update both *node 1* and *node 2* [low link](#what-is-low-link) va
 
 ![Low Link 0-1-2](https://cdn.emre.me/2020-03-07-low-link2.png)
 
-However, *node 3*, *node 4* and *node 5* are already at their optimal [low link](#what-is-low-link) value because there are no other node they can reach with a smaller `id`.
+However, *node 3*, *node 4* and *node 5* are already at their optimal [low link](#what-is-low-link) value because there are **no other node** they can reach with a smaller `id`.
 
 ![Low Link 3-4-5](https://cdn.emre.me/2020-03-07-low-link3.png)
 
@@ -70,6 +70,39 @@ So, we should update *node 6*, *node 7* and *node 8* [low link](#what-is-low-lin
 **3-** During the [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), bridges will be found where the `id` of node your edge is coming from is **less than** the [low link](#what-is-low-link) value of the node your edge is going to.
 
 ![Is Bridge?](https://cdn.emre.me/2020-03-07-is-bridge.png)
+
+## Problem: Critical Connections in a Network ##
+{% capture notice %}
+[**LeetCode 1192 - Critical Connections in a Network** [*hard*]](https://leetcode.com/problems/critical-connections-in-a-network/)
+
+There are `n` servers numbered from **0** to **n-1** connected by undirected server-to-server connections forming a network where `connections[i] = [a, b]` represents a connection between servers **a** and **b**. Any server can reach any other server directly or indirectly through the network.
+
+A critical connection is a connection that, if removed, will make some server unable to reach some other server.
+
+Return all critical connections in the network in any order.
+
+**Example 1:**
+
+![Critical Connections](https://cdn.emre.me/2020-03-07-critical-connections.png)
+
+```python
+Input: n = 4, connections = [[0, 1], [1, 2], [2, 0], [1, 3]]
+Output: [[1, 3]]
+Explanation: [[3, 1]] is also accepted.
+```
+**Constraints:**
+
+- **1** <= `n` <= **10^5**
+- **n-1** <= `connections.length` <= **10^5**
+- `connections[i][0] != connections[i][1]`
+- There are no repeated connections.
+
+
+{% endcapture %}
+
+<div class="notice--info">
+  {{ notice | markdownify }}
+</div>
 
 
 ## References
