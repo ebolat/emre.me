@@ -20,15 +20,6 @@
 
 .archive__item {
   position: relative;
-
-  a {
-    position: relative;
-    z-index: 10;
-  }
-
-  a[rel="permalink"] {
-    position: static;
-  }
 }
 
 .archive__subtitle {
@@ -50,7 +41,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
-  a[rel="permalink"]::before {
+  a::before {
     content: '';
     position: absolute;
     left: 0;
@@ -444,12 +435,4 @@
       padding-right: 0;
     }
   }
-}
-
-/* Place inside a single layout */
-
-.layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
 }
