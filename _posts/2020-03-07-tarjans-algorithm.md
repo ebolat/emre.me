@@ -39,7 +39,7 @@ Nodes marked with *orange color* are **articulation points** because if you remo
 ### Steps ###
 1. Start at **any** *node* and do a [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/) traversal, labeling nodes with an *increasing* `id` value as you go.
 
-![DFS Lebeling](https://cdn.emre.me/2020-03-07-dfs.gif)
+![DFS Lebeling](https://cdn.emre.me/2020-03-07-dfs-traversal.gif)
 
 2. Keep track the `id` of *each* node and the *smallest* [low link](#what-is-low-link) value.
 3. During the [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), bridges will be found where the `id` of node your edge is coming from is **less than** the [low link](#what-is-low-link) value of the node your edge is going to.
