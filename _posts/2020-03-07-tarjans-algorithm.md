@@ -1,7 +1,7 @@
 ---
 title: "Tarjan's Algorithm: Strongly Connected Components"
 header:
-  image: https://cdn.emre.me/2020-03-07-tarjans-algorithm-header-image.jpg
+  overlay_image: https://cdn.emre.me/2020-03-07-tarjans-algorithm-header-image.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/ubQDHALqKiM)"
 categories:
   - algorithms
