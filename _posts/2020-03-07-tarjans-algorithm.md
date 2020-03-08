@@ -37,15 +37,39 @@ Nodes marked with *orange color* are **articulation points** because if you remo
 [Tarjan's Algorithm](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm) provides a very effective way to find these **bridges** and **articulation points** in linear time. We can explain this algorithm in **3** steps:
 
 ### Steps ###
-1. Start at **any** *node* and do a [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/) traversal, labeling nodes with an *increasing* `id` value as you go.
+**1-** Start at **any** *node* and do a [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/) traversal, labeling nodes with an *increasing* `id` value as you go.
 
 ![DFS Lebeling](https://cdn.emre.me/2020-03-07-dfs-traversal.gif)
 
-2. Keep track the `id` of *each* node and the *smallest* [low link](#what-is-low-link) value.
-3. During the [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), bridges will be found where the `id` of node your edge is coming from is **less than** the [low link](#what-is-low-link) value of the node your edge is going to.
+**2-** Keep track the `id` of *each* node and the *smallest* [low link](#what-is-low-link) value.
 
-### What is Low Link? ###
+#### What is Low Link? ####
 **Low Link Value** of a node is defined as the smallest `id` reachable from that node when doing a [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), including itself.
+
+Initially, all [low link](#what-is-low-link) values can be initialized to the each node `id`s.
+
+![Low Link Initial](https://cdn.emre.me/2020-03-07-low-link1.gif)
+
+If we inspect *node 1* and *node 2*, we will notice that **there exist a path** going from *node 1* and *node 2* to *node 0*.
+
+So, we should update both *node 1* and *node 2* [low link](#what-is-low-link) values to **0**.
+
+![Low Link 0-1-2](https://cdn.emre.me/2020-03-07-low-link2.gif)
+
+However, *node 3*, *node 4* and *node 5* are already at their optimal [low link](#what-is-low-link) value because there are no other node they can reach with a smaller `id`.
+
+![Low Link 3-4-5](https://cdn.emre.me/2020-03-07-low-link3.gif)
+
+For *node 6*, *node 7* and *node 8*, **there is a path** from *node 6*, *node 7* and *node 8* to *node 5*.
+
+So, we should update *node 6*, *node 7* and *node 8* [low link](#what-is-low-link) values to **5**.
+
+![Low Link 6-7-8](https://cdn.emre.me/2020-03-07-low-link4.gif)
+
+
+**3-** During the [Depth First Search (DFS)](https://emre.me/coding-patterns/depth-first-search/), bridges will be found where the `id` of node your edge is coming from is **less than** the [low link](#what-is-low-link) value of the node your edge is going to.
+
+
 
 
 =============== TO BE CONTINUE ==================
@@ -53,4 +77,4 @@ Nodes marked with *orange color* are **articulation points** because if you remo
 ## References
 1. Wikipedia, *[Robert Tarjan](https://en.wikipedia.org/wiki/Robert_Tarjan)*
 2. Wikipedia, *[Tarjan's strongly connected components algorithm](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm)*
-3. YouTube, *[William Fiset - Bridges and Articulation points - Algorithm | Graph Theory](https://www.youtube.com/watch?v=aZXi1unBdJA)*
+3. YouTube, *[William Fiset - Bridges and Articulation points - Graph Theory](https://www.youtube.com/watch?v=aZXi1unBdJA)*
