@@ -27,19 +27,19 @@ Given a string **s**, find the longest [palindromic](https://en.wikipedia.org/wi
 
 **Example 1:**
 
-**Input:** "bbbab"
-
-**Output:** 4
-
+```python
+Input: "bbbab"
+Output: 4
 One possible longest palindromic subsequence is "bbbb".
+```
 
 **Example 2:**
 
-**Input:** "cbbd"
-
-**Output:** 2
-
+```python
+Input: "cbbd"
+Output: 2
 One possible longest palindromic subsequence is "bb".
+```
 
 {% endcapture %}
 

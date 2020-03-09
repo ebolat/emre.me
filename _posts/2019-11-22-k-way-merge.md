@@ -28,11 +28,15 @@ Merge **k** sorted linked lists and return it as one sorted list. Analyze and de
 
 **Example:**
 
-**Input:**
-
-![Merge K Sorted Lists Examples](https://cdn.emre.me/2019-11-22-merge-k-sorted-lists-example.png)
-
-**Output:** 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
+```python
+Input:
+[
+  1->4->5,
+  1->3->4,
+  2->6
+]
+Output: 1->1->2->3->4->4->5->6
+```
 
 {% endcapture %}
 

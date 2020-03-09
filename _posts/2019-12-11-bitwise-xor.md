@@ -33,15 +33,17 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
 
 **Example 1:**
 
-**Input:** [2, 2, 1]
-
-**Output:** 1
+```python
+Input: [2, 2, 1]
+Output: 1
+```
 
 **Example 2:**
 
-**Input:** [4, 1, 2, 1, 2]
-
-**Output:** 4
+```python
+Input: [4, 1, 2, 1, 2]
+Output: 4
+```
 
 {% endcapture %}
 
@@ -82,9 +84,10 @@ Given an array of numbers **nums**, in which exactly **two** elements appear *on
 
 **Example:**
 
-**Input:**  [1,2,1,3,2,5]
-
-**Output:** [3,5]
+```python
+Input:  [1, 2, 1, 3, 2, 5]
+Output: [3, 5]
+```
 
 **Note:**
 
