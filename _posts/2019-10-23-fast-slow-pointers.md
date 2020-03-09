@@ -30,7 +30,8 @@ To represent a cycle in the given linked list, we use an integer `pos` which rep
 ```python
 Input: head = [3, 2, 0, -4], pos = 1
 Output: true
-Explanation: There is a cycle in the linked list, where tail connects to the second node.
+Explanation: There is a cycle in the linked list, where tail connects to 
+the second node.
 ```
 
 ![Circular Linked List - Test 1](https://cdn.emre.me/2019-10-23-circularlinkedlist-test1.png){: .align-center}
@@ -40,7 +41,8 @@ Explanation: There is a cycle in the linked list, where tail connects to the sec
 ```python
 Input: head = [1, 2], pos = 0
 Output: true
-Explanation: There is a cycle in the linked list, where tail connects to the first node.
+Explanation: There is a cycle in the linked list, where tail connects to 
+the first node.
 ```
 
 ![Circular Linked List - Test 2](https://cdn.emre.me/2019-10-23-circularlinkedlist-test2.png){: .align-center}
@@ -116,7 +118,8 @@ Note: Do not modify the linked list.
 ```python
 Input: head = [3, 2, 0, -4], pos = 1
 Output: tail connects to node index 1
-Explanation: There is a cycle in the linked list, where tail connects to the second node.
+Explanation: There is a cycle in the linked list, where tail connects to 
+the second node.
 ```
 
 ![Circular Linked List - Test 1](https://cdn.emre.me/2019-10-23-circularlinkedlist-test1.png){: .align-center}
@@ -126,7 +129,8 @@ Explanation: There is a cycle in the linked list, where tail connects to the sec
 ```python
 Input: head = [1, 2], pos = 0
 Output: tail connects to node index 0
-Explanation: There is a cycle in the linked list, where tail connects to the first node.
+Explanation: There is a cycle in the linked list, where tail connects to 
+the first node.
 ```
 
 ![Circular Linked List - Test 2](https://cdn.emre.me/2019-10-23-circularlinkedlist-test2.png){: .align-center}
