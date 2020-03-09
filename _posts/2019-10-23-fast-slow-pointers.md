@@ -27,31 +27,31 @@ To represent a cycle in the given linked list, we use an integer `pos` which rep
 
 **Example 1:**
 
-**Input:** `head` = [3, 2, 0, -4], `pos` = 1
-
-**Output:** true
-
-**Explanation:** There is a cycle in the linked list, where tail connects to the second node.
+```python
+Input: head = [3, 2, 0, -4], pos = 1
+Output: true
+Explanation: There is a cycle in the linked list, where tail connects to the second node.
+```
 
 ![Circular Linked List - Test 1](https://cdn.emre.me/2019-10-23-circularlinkedlist-test1.png){: .align-center}
 
 **Example 2:**
 
-**Input:** `head` = [1,2], `pos` = 0
-
-**Output:** true
-
-**Explanation:** There is a cycle in the linked list, where tail connects to the first node.
+```python
+Input: head = [1, 2], pos = 0
+Output: true
+Explanation: There is a cycle in the linked list, where tail connects to the first node.
+```
 
 ![Circular Linked List - Test 2](https://cdn.emre.me/2019-10-23-circularlinkedlist-test2.png){: .align-center}
 
 **Example 3:**
 
-**Input:** `head` = [1], `pos` = -1
-
-**Output:** false
-
-**Explanation:** There is no cycle in the linked list.
+```python
+Input: head = [1], pos = -1
+Output: false
+Explanation: There is no cycle in the linked list.
+```
 
 ![Circular Linked List - Test 3](https://cdn.emre.me/2019-10-23-circularlinkedlist-test3.png){: .align-center}
 
@@ -113,31 +113,31 @@ Note: Do not modify the linked list.
 
 **Example 1:**
 
-**Input:** `head` = [3, 2, 0, -4], `pos` = 1
-
-**Output:** tail connects to node index 1
-
-**Explanation:** There is a cycle in the linked list, where tail connects to the second node.
+```python
+Input: head = [3, 2, 0, -4], pos = 1
+Output: tail connects to node index 1
+Explanation: There is a cycle in the linked list, where tail connects to the second node.
+```
 
 ![Circular Linked List - Test 1](https://cdn.emre.me/2019-10-23-circularlinkedlist-test1.png){: .align-center}
 
 **Example 2:**
 
-**Input:** `head` = [1,2], `pos` = 0
-
-**Output:** connects to node index 0
-
-**Explanation:** There is a cycle in the linked list, where tail connects to the first node.
+```python
+Input: head = [1, 2], pos = 0
+Output: tail connects to node index 0
+Explanation: There is a cycle in the linked list, where tail connects to the first node.
+```
 
 ![Circular Linked List - Test 2](https://cdn.emre.me/2019-10-23-circularlinkedlist-test2.png){: .align-center}
 
 **Example 3:**
 
-**Input:** `head` = [1], `pos` = -1
-
-**Output:** no cycle
-
-**Explanation:** There is no cycle in the linked list.
+```python
+Input: head = [1], pos = -1
+Output: no cycle
+Explanation: There is no cycle in the linked list.
+```
 
 ![Circular Linked List - Test 3](https://cdn.emre.me/2019-10-23-circularlinkedlist-test3.png){: .align-center}
 

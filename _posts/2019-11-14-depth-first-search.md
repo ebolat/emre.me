@@ -30,7 +30,15 @@ Given a binary tree and a sum, determine if the tree has a *root-to-leaf* path s
 
 Given the below binary tree and sum = 22,
 
-![Path Sum Tree](https://cdn.emre.me/2019-11-14-path-sum-tree.png)
+```python
+      5
+     / \
+    4   8
+   /   / \
+  11  13  4
+ /  \      \
+7    2      1
+```
 
 return `true`, as there exist a *root-to-leaf* path 5 -> 4 -> 11 -> 2 which sum is **22**.
 
