@@ -101,7 +101,7 @@ class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         sorted_list = []
 
-        if numCourses < - 0:
+        if numCourses <= 0:
             return False
 
         # a. Initialization
