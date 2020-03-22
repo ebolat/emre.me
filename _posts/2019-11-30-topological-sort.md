@@ -146,3 +146,4 @@ Scheduling or grouping problems which have dependencies between items are good e
 
 ## Similar LeetCode Problems ##
 * [LeetCode 210 - Course Schedule II [*medium*]](https://leetcode.com/problems/course-schedule-ii/)
+* [LeetCode 269 - Alien Dictionary [*hard*] [*premium*]](https://leetcode.com/problems/alien-dictionary/)
