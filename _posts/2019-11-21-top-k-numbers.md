@@ -18,7 +18,7 @@ Previous posts were about [Sliding Window](https://emre.me/coding-patterns/slidi
 
 We are going to use [Heap](https://emre.me/data-structures/heaps/) data structure to keep track of **K** elements.
 
-## Problem: Binary Search ##
+## Problem: K-th Largest Element  ##
 {% capture notice %}
 [**LeetCode 215 - Kth Largest Element in an Array** [*medium*]](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
