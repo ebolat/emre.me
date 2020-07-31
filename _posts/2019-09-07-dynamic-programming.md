@@ -109,7 +109,7 @@ def fibonacci_tabulation(n):
     return f[n]
 ```
 
-## Memoization vs Tebulation ##
+## Memoization vs Tabulation ##
 
 Generally speaking, [memoization](#memoization) is easier to code than [tabulation](#tabulation). We can write a *memoriser* wrapper function that automatically does it for us. With [tabulation](#tabulation), we have to come up with an *ordering*.
 
