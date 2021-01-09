@@ -75,4 +75,5 @@ When the problem gives this constraint and [Linked Lists](https://emre.me/data-s
 
 ## Similar LeetCode Problems ##
 * [LeetCode 92 - Reverse Linked List II [*medium*]](https://leetcode.com/problems/reverse-linked-list-ii/)
+* [LeetCode 25 - Reverse Nodes in k-Group [*hard*]](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 
