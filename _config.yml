@@ -109,7 +109,7 @@ author:
   name             : "Emre Bolat"
   avatar           : "https://cdn.emre.me/emre_avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Software Architect"
-  location         : "Istanbul, Turkey"
+  location         : "New York"
   email            : "emre@emre.me"
   links:
     - label: "Website"
