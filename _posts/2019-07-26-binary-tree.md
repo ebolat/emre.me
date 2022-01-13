@@ -67,8 +67,8 @@ def insert_right(self, value):
         self.right = BinaryTree(value)
     else:
         new_node = BinaryTree(value)
-        new_node.left = self.left
-        self.left = new_node
+        new_node.right = self.right
+        self.right = new_node
 ```
 
 There will be either no right child or there will be an existing right child which will be pushed down one level with the addition of new right child.
@@ -97,8 +97,8 @@ class BinaryTree:
             self.right = BinaryTree(value)
         else:
             new_node = BinaryTree(value)
-            new_node.left = self.left
-            self.left = new_node
+            new_node.right = self.right
+            self.right = new_node
 
     def get_right_child(self):
         return self.right
